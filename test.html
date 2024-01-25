@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!--HTML5 정의문/선언문-->
+<html lang="ko"> <!--영어권en 한글 ko-->
+<head>
+    <meta charset="UTF-8"> <!--문자셋 한글이 깨지지 않게 인코딩-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹페이지 제목부분</title> <!--웹문서의 제목 정의 / 검색엔진 최적화-->
+</head>
+<body>
+    <!-- ctrl + / = 주석처리 -->
+    <!-- shift + alt + 화살표(아래) : 한줄복사 -->
+    <!--<br> : 줄바꿈-->
+    <h1>웹 개발 기초</h1> <!--h : 제목을 나타내는 태그-->
+    <h2>HTML : 웹사이트의 모습을 기술하기 위한 마크업</h2>
+    프로그래밍 언어가 아니라 <strong>마크업 정보</strong>를 표현하는 <b>마크업 언어</b>로
+    문서의 내용 이외의 문서 언어라는 뜻이다.
+    <!--strong : 강조할 때 굴게 표시
+        b : 단순히 굵게 표시 -->
+
+       <em> 중요한 내용을 담고 있는 em태그</em> <br>
+       <i> 단순히 이탤릭체로 표시</i>
+       <p> 웹의 창시자인 팀 버너스 리
+        <q cite="https://ko.wikipedia.org/wiki/%ED%8C%80_%EB%B2%84%EB%84%88%EC%8A%A4%EB%A6%AC">
+        웹의 힘은 보편성에 있다. 장애에 구애없이 모든 사람이 접근할 수 있는 것이 필수 요소이다. </q>
+        라는 말로 웹 접근성을 설명한다.
+        <!-- q : 인용구, 즉 따옴표 표시 / 인용 내용 표시하기-->
+       </p>
+
+       <p>루비(Ruby)는 1995년 일본의 프로그래머인 마치모토 유키히로
+        <ruby>松本行弘
+            <rt>まつもとゆきひろ </rt></ruby>가 만든 프로그래밍 언어입니다. </p>
+            예시-><ruby>윗주 <rt> ruby </rt></ruby> 윗주 (루비ruby)사용
+            <ruby>아랫글자<rt>윗글자</rt></ruby> <br><br>
+    <h3>제목을 나타내는 태그</h3>
+    <h4>제목을 나타내는 태그</h4>
+    <h5>제목을 나타내는 태그</h5>
+    <h6>제목을 나타내는 태그</h6>
+    <p>문단 태그로 표현 문단 태그로 표현<br> 문단 태그로 표현</p>
+    <img src="images/Fall '19 campaign – Stüssy.jpg" alt="stussy dinosaur 2019 collaboration release">
+    <img src="./images/skatebord gif ver.gif" alt="보드타는 사람">
+    <!-- 이미지 상대경로 -->
+    <!-- / 루트 (하위)
+        ./현재위치 
+        ../현재위치의 상위(상단) 폴더  
+    -->
+    <img src="https://media3.giphy.com/media/RMkHQEBdZaymJwi4xB/giphy.gif?cid=82a1493bx8n1u8bnfeav5dtw6fksezochvugyhalfh27evhh&ep=v1_videos_related&rid=giphy.gif&ct=v">
+    <!-- 이미지 확장자의 종류
+        GIF : 투명한 배경이나 움직이는 이미지를 만들 수 있다.
+        JPG/JPEG : 일반적으로 많이 쓰이는 이미지 확장자
+                 -> 저장을 반복하다보면 화질이 떨어진다.
+        PNG : 투명 배경을 만들 수 있고 다양한 색상 표현.
+        네트워크용으로 개발되어 최근 많이 사용.
+
+    -->
+
+    <table border="">
+        <!-- 이미지 절대경로 -->
+        <tr><!--가로줄-->
+            <td>자산 : 현금, <br> 현금 외 자산</td> <!--<td> : 표 만들기-->
+            <td>부채 : 차입금</td>
+        </tr>
+        <tr>
+            <td>내용을 입력</td>
+            <td>자본 : 자본금, 이익잉여금</td>
+        </tr>
+    </table>
+
+    <h3> ul : unordered list -> 목차가 없는 리스트</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h3> ol : ordered list -> 목차가 있는 리스트</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+</body>
+</html>
