@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문서 작성하기</title>
+</head>
+<body>
+    <h1>상품 주문서</h1>
+    <fieldset style="color: blueviolet;">
+        <legend><h3>개인 정보</h3></legend>
+        <b>이름</b> 
+        <input type="name" placeholder="여백없이 입력"><br><br>
+        <b>연락처</b>
+        <input type="number" placeholder="연락 가능한 번호">
+    </fieldset>
+    <fieldset style="color: blueviolet;">
+        <legend><h3>배송지 정보</h3></legend>
+        <b>주소</b>
+        <input type="addr" size="60"><br><br>
+        <b>전화번호</b>
+        <input type="number" size="40"><br><br>
+        <b>메모</b>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <legend style="color: blueviolet;"><h3>주문정보</h3></legend>
+        <label for="fruit1"><input type="checkbox" id="fruit1" value="f_1"> 과테말라 안티구아 (100g)
+            <input type="text" size="3" min="0" max="999" value="0">개
+        </label><br><br>
+        <label for="fruit2"><input type="checkbox" id="fruit2" value="f_2"> 인도네시아 만델링 (100g)
+            <input type="text" size="3" min="0" max="999" value="0">개
+        </label><br><br>
+        <label for="fruit3"><input type="checkbox" id="fruit3" value="f_3"> 탐라는도다(블렌딩) (100g)
+            <input type="text" size="3" min="0" max="999" value="0">개
+        </label><br><br>
+    </fieldset>
+    
+    <input type="submit"> 
+</body>
+</html>
