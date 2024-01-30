@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    width: 900px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
 /* 헤더부분 시작 */
 header {
     display: flex;
@@ -25,4 +30,10 @@ a:hover{
 /* 메인 부분 시작 */
 main{
     background-image: url(https://domno-vintage.com/cdn/shop/products/26-Vintage-Carhartt-Jeans-1_800x.jpg?v=1652449306);
+    background-repeat: no-repeat;
+    height: 600px;
+}
+/* 푸터 부분 시작 */
+footer{
+    color: gray;
 }
