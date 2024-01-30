@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position을 활용한 중간점검</title>
+    <style>
+        .box1{
+            width: 240px;
+            height: 300px;
+            background-color: brown;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+        }
+        .box2{
+            width: 284px;
+            height: 304px;
+            background-color: darkgoldenrod;
+            position: static;
+            left: 50px;
+            right: 201px;
+        }
+        .relative-1{
+            width: 104px;
+            height: 281px;
+            background-color: darkmagenta;
+            position: relative;
+            left: 201px;
+            bottom: 28px;
+        }
+        .relative-2{
+            width: 291px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            top: 192px;
+        }    
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="relative-1">relative-1</div>
+    <div class="relative-2">relative-2</div>
+    <div class="fixed">fixed</div>
+    <div class="sticky">sticky</div>
+</body>
+</html>

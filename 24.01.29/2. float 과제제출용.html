@@ -31,7 +31,7 @@
 
         .box3 {
             width: 140px;
-            height: 170px;
+            height: 290px;
             float: right;
 
         }
@@ -73,6 +73,13 @@
             font-size: small;
             color: gray;
         }
+
+        input {
+            width: 130px;
+        }
+        .find {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -94,17 +101,22 @@
         </div>
         <div class="box3">
             <h3>사이드 바</h3>
-            <ul>
-                <li><a href="">모두</a></li>
-                <li><a href="">상의</a></li>
-                <li><a href="">하의</a></li>
-                <li><a href="">기타</a></li>
-            </ul>
+            <label for="user-id">
+                아이디 <input type="text" id="user-id" placeholder="아이디를 입력하세요.">
+            </label> <br> <br>
+            <label for="user-pw">
+                비밀번호 <input type="text" id="user-pw" placeholder="비밀번호를 입력하세요.">
+            </label>
+            <br><br>
+            <input type="submit" value="로그인">
+            <p class="find"><a href="https://thug-club.com/member/id/find_id.html">FORGOT ID</a></p>
+            <p class="find"><a href="https://thug-club.com/member/passwd/find_passwd_info.html">FORGOT PW</a></p>
         </div>
+
     </aside>
     <section>
         <div class="box4">
-            <h2>Thug Club</h2>
+            <h2>브랜드 개요</h2>
             <pre>
 속옷의 경우, 선정적인 문구가 새겨진 제품이 
 유명세를 탔다. 로꼬가 한 콘서트에서 의도적으로
@@ -126,7 +138,8 @@
             <h4>Customer Terms</h4>
             <p>TEL +82 02-792-0207 주식회사 떠그클럽(THUG CLUB Corp.) 조영민 774-81-02506 2022-서울용산-0992 [사업자정보확인]
                 <br> 04344 서울특별시 용산구
-                회나무로 43, 1층, 2층, 3층(이태원동)© 주)떠그클럽. All rights reserved.</p>
+                회나무로 43, 1층, 2층, 3층(이태원동)© 주)떠그클럽. All rights reserved.
+            </p>
             <h4>찾아오시는 길</h4>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.653760125217!2d126.98927587587252!3d37.53965837204556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca39f1e03a267%3A0x40b251c699718e!2sThug%20Club!5e0!3m2!1sko!2skr!4v1706515359720!5m2!1sko!2skr"
