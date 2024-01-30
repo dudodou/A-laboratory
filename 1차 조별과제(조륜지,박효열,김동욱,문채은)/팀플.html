@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
         }
         .top1{
             width: 960px;
@@ -17,21 +18,57 @@
         }
         .top2{
             width: 960px;
-            height: ;
+            height: 80px;
             border: 3px solid black;
             border-top: none;
             text-align: center;
-            
+        }
+        .sticky{
+            position: sticky;
+            width: 140px;
+            height: 280px;
+            border: 3px solid black;
+            position: absolute;
         }
         ul{
-            width: 150px;
-            height: 320px;
-            border: 3px solid black;
-            
+            font-size: 20px; line-height: 2.5em;
         }
+    .button{
+        position: absolute;
+        right: 30px;
+        top: 250px;
+    }
+    .background{
+        width: 2085px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 2px solid black;
+    }
+    .backall1{
+        width: 800px;
+        height: 60px;
+        font-size: x-large;
+        
+    }
+    .write1{
+        font-size: 20px;
+    }
     </style>
 </head>
 <body>
+    <aside class="sticky">
+        <ul type="none">
+            <h2>개요</h2>
+            <li><a href="#배경"> 배경 </a></li>
+            <li><a href="#스킬"> 스킬 </a></li>
+            <li><a href="매드무비"> 매드무비 </a></li>
+        </ul>
+        <div class="button">
+        <input type="button" value="이전">
+        <input type="button" value="다음">
+    </div>
+    </aside>
     <header>
     <div class="top1">
         <img src="/1차 조별과제(조륜지,박효열,김동욱,문채은)/강철용 쓰레쉬960x600.jpg" alt="">
@@ -43,14 +80,18 @@
 </div>
 </header>
 <main>
-    <aside>
-        <ul>
-            <h2>개요</h2>
-            <li>배경</li>
-            <li>스킬</li>
-            <li>매드무비</li>
-        </ul>
-    </aside>
+    <aside class="background"></aside>
+    <div class="backall1">
+        <h1>배경</h1>
+    </div>
+    <div class="write1">
+        <pre>그림자 군도의 악령 쓰레쉬는 남에게 고통을 가하는 것을 즐기는 데다 교활하기까지 하다. 이 세상에 고통을 전파하겠다는 야심에 넘쳐 잔혹한 사냥을 멈추지 않는다. 과거
+에는 무수한 비전 비밀을 지키던 관리인이었으나 생명이나 죽음보다 더 막강한 힘에 굴복하여 지금 같은 악령이 되었다. 이제 쓰레쉬는 직접 개발한 독창적인 고문 방법으로
+사람들을 고통에 빠뜨리고 서서히 정신을 파괴하는 데만 재미를 느끼고 있다. 쓰레쉬에게 붙잡히면 목숨이 끊어지더라도 그 손아귀에서 벗어날 수 없다. 쓰레쉬가 자신이 
+들고 다니는 끔찍한 랜턴에 영혼을 가두고 영원히 끝나지 않는 고통을 가하기 때문이다.
+        </pre>
+    </div>
+</aside>
 </main>
 </body>
 </html>
