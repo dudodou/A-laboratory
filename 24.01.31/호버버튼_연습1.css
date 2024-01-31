@@ -9,6 +9,7 @@ button{
     font-size: 16px;
     background-color: white;
     padding: 10px;
+    box-shadow: black;
 }
 button:hover{
     cursor: pointer;
@@ -19,4 +20,8 @@ h3{
     height: 20px;
     background-color: lightblue;
     padding: 25px;
+}
+.menu{
+    width: 200px;
+    box-shadow: 0 0 10px;
 }

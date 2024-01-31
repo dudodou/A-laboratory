@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 700px;
+    color: antiquewhite;
+    text-align: center;
+}
+.section1{
+    height: 700px;
+    background: url(/images/stussy\ magazine_1.jpeg) no-repeat 50% 0 fixed;
+    /* background-size: cover; */
+}
+.section2{
+    height: 700px;
+    background: url(/images/stussy\ magazine_2.jpeg) no-repeat 50% 0 scroll;
+    
+}
+.section3{
+    height: 700px;
+    background: url(/images/stussy\ magazine_3.jpeg) no-repeat 50% 0 fixed;
+    
+}
+.section4{
+    height: 700px;
+    background: url(/images/Stussy\ magazine_4.jpeg) no-repeat 50% 0 scroll;
+}

@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top1 {
+    width: 960px;
+    height: 600px;
+    border: 3px solid black;
+}
+
+.top2 {
+    width: 960px;
+    height: 80px;
+    border: 3px solid black;
+    border-top: none;
+    text-align: center;
+}
+
+.sticky {
+    width: 140px;
+    height: 280px;
+    border: 3px solid black;
+    position: sticky;
+    top: 0;
+}
+
+ul {
+    font-size: 20px;
+    line-height: 2.5em;
+}
+
+.button {
+    position: absolute;
+    right: 30px;
+    top: 250px;
+}
+
+.background {
+    width: 2070px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.background h1 {
+    text-align: center;
+
+
+}
+
+.backall1 {
+    font-size: x-large;
+    margin-left: 100px;
+
+}
+
+
+
+.skill1 h1 {
+    text-align: center;
+    margin-left: 100px;
+}
