@@ -57,10 +57,22 @@ ul {
     margin-left: 100px;
 
 }
-
-
-
-.skill1 h1 {
+.skill{
+    width: 2070px;
+    height: 3000px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;}
+.skill h1 {
     text-align: center;
     margin-left: 100px;
+}
+video{
+    width: 800px;
+}
+.passive2 {
+    
+}
+aside {
+    margin-top: 10px;
 }
