@@ -1,0 +1,33 @@
+div{
+    margin-bottom: 5px;
+}
+.round1{
+    width: 200px;
+    height: 150px;
+    background-color: brown;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border: 3px solid black;
+    
+    text-align: center;
+}
+p{
+    text-align: left;
+}
+.round2{
+    width: 200px;
+    height: 90px;
+    background-color: lightblue;
+    border: 3px solid black;
+}
+.round3{
+    width: 200px;
+    height: 120px;
+    background-color: green;
+    border: 3px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+table{
+    background-color: yellowgreen;
+}
