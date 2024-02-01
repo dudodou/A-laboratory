@@ -1,7 +1,7 @@
 *{
     background-color: black;
 }
-img{
+.toplogo img{
     display: block;
 }
 .toplogo{
@@ -20,8 +20,6 @@ header {
     position: relative;
     bottom: 300px;
     left: 550px;
-    
-
 }
 
 .top1 {
@@ -127,4 +125,27 @@ iframe{
 }
 .AP{
     color: cornflowerblue;
+}
+.stun{
+    color: violet;
+}
+.magic{
+    color: cornflowerblue;
+}
+.recycle{
+    color: darkorange;
+}
+.protect{
+    color: darkturquoise;
+}
+.attack{
+    color: lightsalmon;
+}
+.up{
+    background: no-repeat 50% 0 fixed;
+}
+.down{
+    height: 1200px;
+    background: url(https://pbs.twimg.com/media/FKV-LuVVEAEGk9w.jpg:large) no-repeat 50% 0 fixed;
+    background-size: cover;
 }
