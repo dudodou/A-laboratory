@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> nth-child </title>
+    <style>
+        ul{
+            list-style: circle;
+        }
+        li{
+            line-height: 30px;
+            margin-bottom: 2px;
+        }
+        /* 짝수 요소 선택 */
+        ul li:nth-child(even){
+            color: blue;
+        }
+        /* 홀수 요소 선택 */
+        ul li:nth-child(odd){
+            color: green;
+        }
+        ul li:nth-child(1){
+            color: red;
+        }
+        /* 2번째부터 3의 배수 선택 */
+        ul li:nth-child(3n+2){
+            background-color: yellowgreen;
+        }
+        /* 3번째 요소부터 전체 선택 */
+        ul li:nth-child(n+3){
+            color: gray;
+            font-weight: bold;
+        }
+        /* (3n)n의배수 3의 배수 */
+        ul li:nth-child(3n){
+            color: orchid;
+        }
+    </style>
+</head>
+<body>
+    <h3>파스타 면 종류</h3>
+    <ul>
+        <li>스파게티(spaghetti) ...</li>
+        <li>링귀네(Linguine) ...</li>
+        <li>스파게티(Bucatini) ...</li>
+        <li>스파게티(Tagliatelle) ...</li>
+        <li>스파게티(Fettuccine) ...</li>
+        <li>스파게티(Lasanna) ...</li>
+        <li>스파게티(spaghetti) ...</li>
+        <li>스파게티(spaghetti) ...</li>
+    </ul>
+</body>
+</html>

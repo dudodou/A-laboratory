@@ -1,0 +1,8 @@
+.box1::after{
+    content: "이후콘텐츠내용";
+    color: red;
+}
+.box1::before{
+    content: "이전콘텐츠내용";
+    color: blue;
+}
