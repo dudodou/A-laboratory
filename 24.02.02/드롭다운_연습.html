@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 드롭다운 연습 </title>
+    <style>
+        *{margin: 0; padding: 0; list-style: none;}
+        .nav{
+            background-color: orange;
+            /* width: 300px; */
+            
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .nav > ul{
+            display: flex;
+        }
+        .nav > ul > li{width: 20%;
+            position: relative;
+        }
+        .nav > ul > li .sub-wrap{
+            display: none;
+            position: absolute; width: 100%;
+            background-color: aliceblue; left: 0;
+        }
+        .nav > ul > li:hover > .sub-wrap{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li class="main-wrap">
+                <!-- position relative -->
+                <a href="#">메인 메뉴</a>
+                <!-- main-wrap:hover > .sub-wrap display -->
+                <!-- sub-wrap == position absolute -->
+                <ul class="sub-wrap">
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                </ul>
+            </li>
+            <li>
+                <!-- position relative -->
+                <a href="#">메인 메뉴</a>
+                <!-- main-wrap:hover > .sub-wrap display -->
+                <!-- sub-wrap == position absolute -->
+                <ul class="sub-wrap">
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                </ul>
+            </li>
+            <li><!-- position relative -->
+                <a href="#">메인 메뉴</a>
+                <!-- main-wrap:hover > .sub-wrap display -->
+                <!-- sub-wrap == position absolute -->
+                <ul class="sub-wrap">
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                </ul></li>
+            <li>
+                <!-- position relative -->
+                <a href="#">메인 메뉴</a>
+                <!-- main-wrap:hover > .sub-wrap display -->
+                <!-- sub-wrap == position absolute -->
+                <ul class="sub-wrap">
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                </ul>
+            </li>
+            <li>
+                <!-- position relative -->
+                <a href="#">메인 메뉴</a>
+                <!-- main-wrap:hover > .sub-wrap display -->
+                <!-- sub-wrap == position absolute -->
+                <ul class="sub-wrap">
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                    <li><a href="#">서브메뉴</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
