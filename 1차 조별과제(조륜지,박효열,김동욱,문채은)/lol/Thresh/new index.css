@@ -1,0 +1,65 @@
+*{
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;    
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.homelogo {
+    width: 400px;
+    height: 250px;
+    position: relative;
+    margin-top: -40px;
+}
+a {
+    text-decoration-line: none;
+}
+li {
+    line-height: 60px;
+}
+.sticky {
+    width: 150px;
+    height: 250px;
+    border: 1px solid white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+.top-section{
+    display: flex;
+}
+.topimg {
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    left: 32%;
+    border: 1px solid white;
+}
+div h1{
+    width: 50%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    position: relative;
+    left: 32%;
+    bottom: 1.5%;
+    border: 1px solid white;
+    text-align: center;
+}
+div h2{
+    width: 50%;
+    border-bottom: 1px solid white;
+    text-align: center;
+    position: relative;
+    left: 25%;
+    padding: 20px;
+}
+.detail{
+    width: 70%;
+    position: relative;
+    left: 20%;
+    line-height: 40px;
+}
