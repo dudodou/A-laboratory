@@ -2,9 +2,11 @@
     background-color: black;
     color: white;
     padding: 0;
-    margin: 0;    
+    margin: 0;
 }
-
+body{
+    overflow-x: hidden;
+}
 header{
     height: 100px;
 }
@@ -99,5 +101,93 @@ div h4{
     left: 25%;
 }
 .passive1 h3{
+    width: 40%;
     position: relative;
+    text-align: center;
+    top: -75px;
+    left: 30%;
+    font-size: xx-large;
+}
+.passive1 p{
+    margin: 0 auto;
+    width: 70%;
+    line-height: 40px;
+}
+.qskill img{
+    left: 25%;
+}
+.qskill h3{
+    width: 33%;
+    position: relative;
+    text-align: center;
+    top: -60px;
+    left: 38%;
+    font-size: 19px;
+}
+.qskill p{
+    margin: 0 auto;
+    width: 70%;
+    line-height: 40px;
+}
+.wskill img{
+    left: 25%;
+}
+.wskill h3{
+    width: 40%;
+    position: relative;
+    text-align: center;
+    top: -75px;
+    left: 30%;
+    font-size: xx-large;
+}
+.wskill p{
+    margin: 0 auto;
+    width: 70%;
+    line-height: 40px;
+}
+.eskill img{
+    left: 25%;
+}
+.eskill h3{
+    width: 40%;
+    position: relative;
+    text-align: center;
+    top: -75px;
+    left: 30%;
+    font-size: xx-large;
+}
+.eskill p{
+    margin: 0 auto;
+    width: 70%;
+    line-height: 40px;
+}
+.rskill img{
+    left: 25%;
+}
+.rskill h3{
+    width: 40%;
+    position: relative;
+    text-align: center;
+    top: -75px;
+    left: 30%;
+    font-size: xx-large;
+}
+.rskill p{
+    margin: 0 auto;
+    width: 70%;
+    line-height: 40px;
+}
+.madmovie h2{
+    margin-top: 40px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.madmovie-section {
+    height: 100vh;
+}
+div .madmovie{
+    height: 200px;
 }
