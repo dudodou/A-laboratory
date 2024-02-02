@@ -6,20 +6,24 @@
 }
 
 header{
-    display: flex;
-    justify-content: center;
+    height: 100px;
 }
 .homelogo {
-    width: 400px;
-    height: 250px;
-    position: relative;
-    margin-top: -40px;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
 }
 a {
     text-decoration-line: none;
 }
 li {
     line-height: 60px;
+}
+main{
+    position: relative ;
+    left: 10%;
+    top: -250px;
+    width: 80%;
 }
 .sticky {
     width: 150px;
@@ -28,17 +32,15 @@ li {
     text-align: center;
     position: sticky;
     top: 0;
-}
-.top-section{
-    display: flex;
+    z-index: 2;
 }
 .topimg {
     width: 50%;
     height: auto;
     box-sizing: border-box;
-    position: relative;
-    left: 32%;
     border: 1px solid white;
+    display: block;
+    margin: 0 auto;
 }
 .text1 {
     width: 50%;
@@ -56,25 +58,22 @@ div h1{
     width: 50%;
     padding: 10px 0;
     box-sizing: border-box;
-    position: relative;
-    left: 32%;
-    bottom: 1.5%;
     border: 1px solid white;
     text-align: center;
+    margin: 0 auto;
 }
 div h2{
-    width: 50%;
+    width: 60%;
     border-bottom: 1px solid white;
     text-align: center;
-    position: relative;
-    left: 23%;
+    margin: 0 auto;
     padding: 20px;
 }
 .detail{
-    width: 70%;
+    width: 60%;
     position: relative;
-    left: 20%;
     line-height: 50px;
+    margin: 0 auto;
 }
 video{
     margin: 20px;
@@ -84,4 +83,21 @@ video{
     top: 50px;
     left: 23%;
     border: 1px solid white;
+}
+div img{
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+}
+div h4{
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+    left: 25%;
+}
+.passive1 img{
+    left: 25%;
+}
+.passive1 h3{
+    position: relative;
 }
