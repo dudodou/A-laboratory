@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate</title>
+    <style>
+        img {
+            width: 150px;
+        }
+
+        .origin {
+            border: 1px solid;
+            width: 200px;
+            height: 200px;
+        }
+
+        .rotate1:hover {
+            /* 시계방향으로 20도 회전 */
+            transform: rotate(20deg);
+        }
+
+        .rotate2:hover {
+            /* 반시계방향으로 -40도 회전 */
+            transform: rotate(-40deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h2> 이미지 2차원 회전하기 </h2>
+    <div class="origin">
+        <div class="rotate1"><img src="https://i.pinimg.com/564x/3b/a5/0c/3ba50c263dfa1acb524cf2acaec92653.jpg" alt="">
+        </div>
+        <div class="origin">
+            <div class="rotate2"><img src="https://i.pinimg.com/564x/3b/a5/0c/3ba50c263dfa1acb524cf2acaec92653.jpg"
+                    alt="">
+            </div>
+        </div>
+</body>
+
+</html>

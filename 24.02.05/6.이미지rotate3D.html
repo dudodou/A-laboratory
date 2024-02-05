@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 이미지rotate3D </title>
+</head>
+<style>
+    img{
+        width: 150px;
+    }
+    .origin{
+        perspective: 200px; /* 원근감 : 3차원 적용 */
+        border: 1px solid;
+        width: 200px;
+        height: 200px;
+        margin: 50px;
+    }
+    .rotatex{
+        /* x축을 기준으로 시계방향으로 45도 회전 */
+        transform: rotateX(45deg);
+    }
+    .rotatey{
+         /* y축을 기준으로 시계방향으로 45도 회전 */
+        transform: rotateY(45deg);
+    }
+    .rotatez{
+        /* z축을 기준으로 시계방향으로 45도 회전 */
+        transform: rotateZ(45deg);
+    }
+    .rotatexyz{
+        /* x축, y축, z축으로 벡터로 45도 회전 */
+        transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+    }
+</style>
+<body>
+    <h2> 이미지 3차원 회전하기 </h2>
+    <div class="origin">
+        <div class="rotatex"><img src="https://i.pinimg.com/736x/7c/f6/a7/7cf6a7e0909595e8666448e2d379fbdf.jpg" alt="">
+        </div>
+        <div class="origin">
+            <div class="rotatey"><img src="https://i.pinimg.com/736x/7c/f6/a7/7cf6a7e0909595e8666448e2d379fbdf.jpg"
+                    alt="">
+            </div>
+            <div class="origin">
+                <div class="rotatez"><img src="https://i.pinimg.com/736x/7c/f6/a7/7cf6a7e0909595e8666448e2d379fbdf.jpg"
+                        alt="">
+                </div>
+                <div class="origin">
+                    <div class="rotatexyz"><img
+                            src="https://i.pinimg.com/736x/7c/f6/a7/7cf6a7e0909595e8666448e2d379fbdf.jpg" alt="">
+                    </div>
+</body>
+
+</html>
