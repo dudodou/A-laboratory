@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3차원회전예제</title>
     <style>
+        body{
+            display: flex;
+        }
         .origin{
             perspective: 200px; /* 원근감 */
             border: 1px solid;
@@ -13,6 +16,7 @@
             width: 100px;
             height: 100px;
             background-color: violet;
+            transition: all 3s;
         }
         .rotateX:hover{
             transform: rotateX(55deg);

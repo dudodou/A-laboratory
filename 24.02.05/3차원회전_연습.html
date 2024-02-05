@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+            justify-content: space-around;
+        }
+        .origin div{
+            transition: all 0.5s;
+        }
+        .origin {
+            perspective: 200px;
+        }
+        .rotateX:hover{
+            transform: rotateX(45deg);
+            background-color: orange;
+        }
+        .rotateY:hover{
+            transform: rotateY(45deg);
+            background-color: orange;
+        }
+        .rotateZ:hover{
+            transform: rotateZ(45deg);
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="origin">
+            <div class="rotateX">메뉴</div>
+        </div>
+        <div class="origin">
+            <div class="rotateY">정보</div>
+        </div>
+        <div class="origin">
+            <div class="rotateZ">오시는 길</div>
+        </div>
+    </section>
+</body>
+</html>
