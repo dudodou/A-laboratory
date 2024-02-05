@@ -182,7 +182,31 @@ div h4{
 iframe{
     width: 100%;
     position: relative;
-}   
+}
+.soul{
+    color: burlywood;
+}
+.depence{
+    color: gold;
+}
+.AP{
+    color: cornflowerblue;
+}
+.stun{
+    color: violet;
+}
+.magic{
+    color: cornflowerblue;
+}
+.recycle{
+    color: darkorange;
+}
+.protect{
+    color: darkturquoise;
+}
+.attack{
+    color: lightsalmon;
+}
 .madmovie-section {
     height: auto;
 }
