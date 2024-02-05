@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 드롭다운 과제 </title>
+    <style>
+        .downbtn{
+            background-color: orange;
+            width: 200px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .container{
+            display: flex;
+            cursor: pointer;
+        }
+        ul{
+            list-style: none;
+            text-align: center;
+            padding-left: 0;
+        }
+        .downbtn{
+            display: none;
+        }
+        .g:hover .downbtn{
+            display: block;
+        }
+.container:hover .downbtn{
+    display: block;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <ul class="g">메인메뉴
+            <div class="downbtn">
+                <li><a href="#">서브메뉴1</a></li>
+                <li><a href="#">서브메뉴2</a></li>
+                <li><a href="#">서브메뉴3</a></li>
+            </div>
+        </ul>
+        <ul class="t">메인메뉴
+            <div class="downbtn">
+                <li><a href="#">서브메뉴1</a></li>
+                <li><a href="#">서브메뉴2</a></li>
+                <li><a href="#">서브메뉴3</a></li>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
