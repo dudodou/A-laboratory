@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
 
-* {
-    margin: 0px;
-    padding: 0px;
+*{
+    margin: 0;
+    padding: 0;
 }
-
-body {
+body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: #b1e1e2;
+    background-color: rgb(193, 232, 244);
     animation: sky linear 20s infinite;
 }
-
 section {
     width: 1000px;
     height: 400px;
@@ -22,40 +20,36 @@ section {
     transform: translate(-50%, -70%);
 }
 
-h1 {
+h1{
     width: 1000px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 150%);
     font: 92px/1 "Poiret one";
-    color: #fff;
+    color: white;
     text-align: center;
     animation: day linear 20s infinite;
 }
-
-section .sky {
+section .sky{
     position: absolute;
     width: 100%;
     height: 100%;
 }
-
-section .sky .sun {
+section .sky .sun{
     position: absolute;
     top: -150px;
     left: 50%;
-    margin-left:-100px;
+    margin-left: -100px;
     transform-origin: center 500px;
     animation: sun linear 20s infinite;
 }
-
 section .sky .cloud2{
-    position: absolute;
-    top: -30px;
-    left: 10%;
-    animation: flow linear 20s infinite;
+position: absolute;
+top: -30px;
+left: 10%;
+animation: flow linear 20s infinite;
 }
-
 section .sky .cloud1{
     position: absolute;
     top: 20px;
@@ -63,58 +57,64 @@ section .sky .cloud1{
     animation: flow linear 10s infinite;
 }
 
-section .town .day{ /*집*/
+/* section .town .day{
     position: absolute;
     bottom: 0;
     left: 150px;
+    
+}
+section .town .night{
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+} */
+
+.day{
     animation: day linear 20s infinite;
 }
-
-section .town .night{ /*집*/
+section .town > img{
     position: absolute;
     bottom: 0;
     left: 150px;
 }
-
-.rotation{ /*대관람차*/
+.rotation{
     position: absolute;
-    top:210px;
-    left:520px;
+    top: 210px;
+    left: 520px;
     animation: rotation linear 15s infinite;
 }
-
-@keyframes rotation { /*놀이기구*/
+@keyframes rotation { /* 놀이기구 */
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
-}
-
-@keyframes sky {
-    0%{background-color: #b580e4;}
+    }
+@keyframes sky{
+    0%{background-color: violet;}
     25%{background-color: lightblue;}
-    50%{background-color: #f1a8c4;}
-    75%{background-color: #5d649b;}
-    100%{background-color: #6a4d83;}
+    50%{background-color: pink;}
+    75%{background-color: rgb(53, 31, 105);}
+    100%{background-color: rgb(101, 29, 101);}
 }
 
-@keyframes sun {
+@keyframes sun{
     0%{opacity: 0; transform: rotate(-90deg);}
     25%{opacity: 1; transform: rotate(-30deg);}
     50%{opacity: 1; transform: rotate(30deg);}
-    75%{opacity: 0; transform: rotate(90deg);} 
+    75%{opacity: 0; transform: rotate(90deg);}
     100%{opacity: 0; transform: rotate(-90deg);}
 }
 
-@keyframes day { /*밤 특정 요소 숨기는*/
-    0%{opacity: 0;}
-    25%{opacity: 1;}
-    50%{opacity: 1;}
-    75%{opacity: 0;}
-    100%{opacity: 0;}
+
+@keyframes day { /* 밤 특성 요소 숨기는 */
+0%{opacity: 0;}
+25%{opacity: 1;}
+50%{opacity: 1;}
+75%{opacity: 0;}
+100%{opacity: 0;}
 }
 
-@keyframes flow { /*구름*/
-    0%{left:0%; opacity:0;}
-    10%{opacity:1;}
-    80%{opacity: 1;}
-    100%{left:90%; opacity: 0;}
+@keyframes flow { /* 구름 */
+0%{left: 0%; opacity: 0;}
+10%{opacity: 1;}
+80%{opacity: 1;}
+100%{left: 90%; opacity: 0;}
 }

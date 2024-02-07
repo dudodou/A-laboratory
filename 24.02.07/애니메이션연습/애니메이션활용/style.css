@@ -57,26 +57,25 @@ section .sky .cloud1{
     animation: flow linear 10s infinite;
 }
 
-/* section .town .day{
+section .town .day{
     position: absolute;
     bottom: 0;
     left: 150px;
-    
 }
 section .town .night{
     position: absolute;
     bottom: 0;
     left: 150px;
-} */
+} 
 
 .day{
     animation: day linear 20s infinite;
 }
-section .town > img{
+/* section .town > img{
     position: absolute;
     bottom: 0;
     left: 150px;
-}
+} */
 .rotation{
     position: absolute;
     top: 210px;
