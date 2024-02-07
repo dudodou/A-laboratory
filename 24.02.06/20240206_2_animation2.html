@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        section{
+            width: 100vw; height: 900px;
+            background: url(https://i.pinimg.com/564x/9c/7b/a3/9c7ba39081c4fef05b83f97d7744bf17.jpg) no-repeat;
+            background-size: cover;
+            color: #fff; overflow: hidden;
+            /* overflow: hidden = 삐져나간 부분 안보이게 세팅 */
+        }
+        .firPart{position: relative; width: 100%; height: 100%; overflow: hidden;}
+        .firPart span{
+            position: absolute; top: 70%; right: -155%;
+            color: blanchedalmond; font-size: 5em;
+            animation: 0.5s 1s moveIn cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+            /* forwords :: 키프레임에 준 마지막값에서 멈춤 */
+        }
+        .firPart p{
+            position: absolute; right: -155%; top: 80%;
+            font-size: 3em; text-align: right;
+            animation: 0.5s 1.5s moveIn cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        }
+        @keyframes moveIn{
+            from{ /* 시작 시 right : -10% 에서 시작해 */
+                right: -10%;
+            }
+            to{ /* 마지막엔 right : 5% 위치에서 끝난다 */
+                right: 5%;
+            }
+        }
+
+        .secPart{
+            position: absolute; top: 40%; right: 5%; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; opacity: 0;
+            font-size: 40px; text-align: right; line-height: 2; color: #fff;
+            animation: 0.5s 1.5s opacity cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        }
+        @keyframes opacity{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="firPart">
+            <span>pour un logiciel CRM,</span>
+            <p>simple, complet et intuitif</p>
+        </div>
+
+        <pre class="secPart">
+            CRM 소프트웨어를 선택하고,
+            간단하고 완전하며
+            직관적인
+        </pre>
+    </section>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        #wrap{text-align: center; margin-top: 50px;}
+        label{width: 20%;}
+        label, input{cursor: pointer; display: inline-block; transition: 0.5s;}
+        label:hover{font-weight: 1000; transform: scale(1.1);}
+        .box{
+            width: 250px; height: 250px; line-height: 250px; margin: 300px auto; text-align: center;
+            background: blanchedalmond; border-radius: 50%; transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        /* 아이디값 matrixDefaul값에 checked 할 경우 #matrixDefaul 뒤에 있는 box style 변경 */
+        #matrixDefaul:checked ~ .box{
+            /* matrix : transrform 모든 값을 한번에 적용 가능 아래 순서대로 적용 */
+            /* scaleX, skewY, skewX, scaleY, translateX, translateY */
+            transform: matrix(1,0,0,1,0,0);
+        }
+        #matrixScale:checked ~ .box{transform: matrix(2,0,0,2,0,0);}
+        #matrixSkew:checked ~ .box{transform: matrix(1,-1.5,2,1,0,0);}
+        #matrixTranslate:checked ~ .box{transform: matrix(1,0,0,1,100,100);}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 각 작동은 text 확인 -->
+        <input type="radio" name="matrix" id="matrixDefault" value="matrixDefault" checked>
+        <label for="matrixDefault">matrixDefault(초기화)</label>
+
+        <input type="radio" name="matrix" id="matrixScale" value="matrixScale">
+        <label for="matrixScale">matrixScale(줌)</label>
+
+        <input type="radio" name="matrix" id="matrixSkew" value="matrixSkew">
+        <label for="matrixSkew">matrixSkew(기울기)</label>
+
+        <input type="radio" name="matrix" id="matrixTranslate" value="matrixTranslate">
+        <label for="matrixTranslate">matrixTranslate(이동)</label>
+
+        <div class="box">
+            matrix
+        </div>
+    </div>
+</body>
+</html>

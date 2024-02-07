@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; list-style: none;}
+        #wrap{width: 100vw; margin: 0 auto; overflow: hidden;}
+        ul{
+            display: block; position: relative; left: 0; width: 500vw; height: 350px;
+            /* 애니메이션 : 애니메이션 이름(slideAni : 이름은 애니메이션 내용과 연관되게 적는게 좋음) 애니메이션 지속시간 infinite(무한반복) cubic-bezier(애니메이션 진행시 움직임 속도) 마지막꺼는 나중에 한번 설명해줄게 */
+            animation: slideAni 20s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        /* 애니메이션 내용 */
+        @keyframes slideAni{ /* 애니메이션을 줄 경우 뒤에 오는 이름은 주려는 태그 내 animation: 값을 줘야함 (위 ul 태그 확인) */
+            0%{left: 0;}
+            20%{left: -100vw;}
+            40%{left: -200vw;}
+            60%{left: -300vw;}
+            80%{left: -400vw;}
+            100%{left: 0;}
+
+            /* 처음을 0% 끝을 100%로 봤을 때 
+                0%는 0초 100%는 20초 중간 퍼센트는 내가 준 애니메이션 지속 시간 값 진행도에 따라 움직임 설정
+            */
+        }
+
+        /*  */
+        ul li{float:left; width: 100vw; height: 100%; margin: 0;}
+        li:nth-child(1){
+            background: url(https://i.pinimg.com/564x/45/11/ce/4511cea92887d7f40a4a891020e317d0.jpg);
+            background-size: cover;
+        }
+        li:nth-child(2){
+            background: url(https://i.pinimg.com/736x/6c/b7/67/6cb76744222834de4cf768c4606c029c.jpg);
+            background-size: cover;
+        }
+        li:nth-child(3){
+            background: url(https://i.pinimg.com/564x/0f/5f/cb/0f5fcb7995bb04ddb224d5df69eab2a5.jpg);
+            background-size: cover;
+        }
+        li:nth-child(4){
+            background: url(https://i.pinimg.com/736x/02/6c/18/026c1820d387d0fd08ed149e9703dfc7.jpg);
+            background-size: cover;
+        }
+        li:nth-child(5){
+            background: url(https://i.pinimg.com/564x/d1/04/d8/d104d80a5b309b003a5b6c4a0c55a142.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

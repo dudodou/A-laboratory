@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> grid01 </title>
+    <style>
+        .parents{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* fraction : 부분, 일부, 분수 */
+            grid-template-columns: repeat(4, 25%);
+            /* 4개씩 columns 각각 25%씩 차지 */
+            grid-auto-rows: 150px;
+            /* 모든 행(높이) 150px */
+            grid-auto-rows: minmax(120px, auto);
+            /* 컨텐츠 없는 줄은 최소 120유지, 있는 줄은 자동 */
+            grid-gap: 20px 30px;
+            /* 가로(row)20px 세로(column)30px 적용 */
+            /* grid-column-gap: 20px; */
+            /* grid-row-gap: 30px; */
+        }
+        .parents > div{
+            border: 1px solid;
+        }
+        .box:nth-child(odd){ /* 홀수 */
+            background-color: lightblue;
+        }
+        .box:nth-child(even){ /* 짝수 */
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="parents">
+        <div class="box box">box1
+            플렉스 1차원, 그리드 2차원플렉스 1차원, 그리드 2차원플렉스 1차원, 그리드 2차원플렉스 1차원, 그리드 2차원플렉스 1차원, 그리드 2차원플렉스 1차원, 그리드 2차원플렉스 1차원, 그리드 2차원플렉스 1차원, 그리드 2차원플렉스 1차원, 그리드 2차원플렉스 1차원, 그리드 2차원플렉스 1차원, 그리드 2차원플렉스 1차원, 그리드 2차원
+        </div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+        <div class="box box5">box5</div>
+        <div class="box box6">box6</div>
+        <div class="box box7">box7</div>
+        <div class="box box8">box8</div>
+        <div class="box box9">box9</div>
+        <div class="box box10">box10</div>
+    </div>
+</body>
+</html>
