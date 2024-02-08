@@ -16,11 +16,9 @@ body{
     opacity: 0.1;
 }
 .logo{
-    margin: auto;
+    margin: 17%;
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 250px;
     font-family: 'Creepster', system-ui;
     color: white;
 }
@@ -28,14 +26,18 @@ body{
 h1{
     font-size: 100px;
 }
-.menu{
-    color: white;
-    margin: 20%;
-    display: flex;
-    justify-content: center;
-    line-height: 3;
-    animation-duration: 1s ease;
+li{
+    margin: 30px;
 }
-.point:hover{
+.menu{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    /* transform : left, top 순서 */
+}
+li:hover{
     cursor: pointer;
+    color: white;
+    background-color: green;
 }
