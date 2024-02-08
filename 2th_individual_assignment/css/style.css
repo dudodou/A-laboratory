@@ -45,12 +45,15 @@ h1{
     justify-content: center;
     font-size: 11px;
     line-height: 1.2;
+    
 } 
 .main-nav{
     width: 227px;
     padding-left: 23px;
-    margin-left: 80px;
+    margin-left: 100px;
+    margin-top: 80px;
     font-family: Courier New,Courier,Monaco;
+    text-decoration: none;
 }
 .main-nav2{
     list-style: none;
@@ -62,9 +65,21 @@ h1{
 }
 .mn{
     margin-bottom: 15px;
-    text-decoration: none;
+}
+li a:hover{
+    cursor: pointer;
     background-color: green;
 }
-a:hover{
-    cursor: pointer;
+span{
+    color: white;
+}
+.main-nav2 a {
+    text-decoration: none;
+}
+.index_footer{
+    color: gray;
+    margin-top: 150px;
+    font-size: 0.6rem;
+    font-family: HelveticaNeue,sans-serif;
+    text-align: center;
 }
