@@ -3,10 +3,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
+/********************** 몸통 부분 시작 ************************/
 body{
+    
     background-color: black;
+    animation-duration: 1s;
 }
 .bg{
     position: fixed; width: 100vw; height: 100vh;
@@ -16,8 +19,10 @@ body{
     opacity: 0.1;
 }
 .logo{
-    margin: 17%;
+    height: 50vh;
     display: flex;
+    position: relative;
+    align-items: flex-end;
     justify-content: center;
     font-family: 'Creepster', system-ui;
     color: white;
@@ -27,17 +32,48 @@ h1{
     font-size: 100px;
 }
 li{
-    margin: 30px;
+    font-size: small;
 }
 .menu{
+    display: block;
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -60%);
     /* transform : left, top 순서 */
+    font-family: Courier New,Courier,Monaco;
 }
-li:hover{
-    cursor: pointer;
+.menu2 li:hover{
+    display: inline-block;
     color: white;
     background-color: green;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.btlogo2{
+    color: rgba(103, 103, 103, 0.987);
+    position: absolute;
+    top:68%;
+    left:50%;
+    transform: translate(-50%, -68%);    
+    display: flex;
+    justify-content: space-between;
+}
+.btlogo2:hover{
+    cursor:pointer
+}
+.etc li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top:93%;
+    font-weight: 100;
 }
