@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body{
     background-color: black;
 }
 .bg{
-    position: fixed; width: 100vw; height: 100vh;
-    left: 0; top: 0;
+    /* position: fixed; width: 100vw; height: 100vh;
+    left: 0; top: 0; */
     background-image: url(/portfolio/images/mainpage2.jpeg);
     background-size: cover;
     opacity: 0.1;
 }
-.logo{
+/* .logo{
     margin: auto;
     display: flex;
     justify-content: center;
@@ -19,11 +23,18 @@ body{
     top: 250px;
     font-family: 'Creepster', system-ui;
     color: white;
-}
+    background-color: white; */
+
 h1{
     font-size: 100px;
+    margin: auto;
+   position: relative;
+    top: 250px;
+    font-family: 'Creepster', system-ui;
+    color: white;
+    background-color: white;
 }
-.menu{
+/* .menu{
     color: white;
     margin: 20%;
     display: flex;
@@ -33,4 +44,4 @@ h1{
 }
 .point:hover{
     cursor: pointer;
-}
+} */
