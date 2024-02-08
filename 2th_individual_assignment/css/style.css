@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,10 @@
 body{
     
     background-color: black;
-    animation-duration: 1s;
+    
+}
+.index_header{
+    text-align: center;
 }
 .bg{
     position: fixed; width: 100vw; height: 100vh;
@@ -18,7 +20,7 @@ body{
     background-size: cover;
     opacity: 0.1;
 }
-.logo{
+.logo {
     height: 50vh;
     display: flex;
     position: relative;
@@ -27,9 +29,16 @@ body{
     font-family: 'Creepster', system-ui;
     color: white;
 }
-
+.time{
+    font-family: Courier New,Courier,Monaco;
+    color: white;
+    line-height: 1.12;
+}
 h1{
     font-size: 100px;
+}
+.index_container{
+    
 }
 li{
     font-size: small;
