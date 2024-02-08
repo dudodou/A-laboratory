@@ -38,51 +38,33 @@ h1{
     font-size: 100px;
 }
 .index_container{
-    
-}
-li{
-    font-size: small;
-}
-.menu{
-    display: block;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    /* transform : left, top 순서 */
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 1.2;
+} 
+.main-nav{
+    width: 227px;
+    padding-left: 23px;
+    margin-left: 80px;
     font-family: Courier New,Courier,Monaco;
 }
-.menu2 li:hover{
-    display: inline-block;
-    color: white;
+.main-nav2{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.index_container .main-nav .main.nav2 li{
+    height: 12.5px;
+}
+.mn{
+    margin-bottom: 15px;
+    text-decoration: none;
     background-color: green;
 }
-li a{
-    text-decoration: none;
-    color: white;
-    
-}
-
-.btlogo2{
-    color: rgba(103, 103, 103, 0.987);
-    position: absolute;
-    top:68%;
-    left:50%;
-    transform: translate(-50%, -68%);    
-    display: flex;
-    justify-content: space-between;
-}
-.btlogo2:hover{
-    cursor:pointer
-}
-.etc li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    list-style: none;
-    position: absolute;
-    left: 50%;
-    top:93%;
-    font-weight: 100;
+a:hover{
+    cursor: pointer;
 }
