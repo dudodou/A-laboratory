@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.toplogo{
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+h1{
+    font-family: 'Creepster', system-ui;
+    
+}
+a{
+  text-decoration: none;
+    color: black;
+}
+ul li{
+    margin: 0 100px;
+}
+ul{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+.nav li a:hover{
+    cursor: pointer;
+    color: gray;
+    transition: 0.4s;
+}
+.imgani{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+.ani{
+    width: 7500px;
+    height: 1000px;
+    list-style: none;
+    position: relative;
+    animation: skate 20s infinite ease-in-out forwards;
+}   
+.ani li{
+    width: 800px;
+    height: 80%;
+    float: left;
+}
+@keyframes skate{
+    0%{left: 0;}
+    10%{left: -650px;}
+    20%{left: -1300px;}
+    30%{left: -1950px;}
+    40%{left: -2600px;}
+    50%{left: -3250px;}
+    60%{left: -3900px;}
+    70%{left: -4550px;}
+    80%{left: -5200px;}
+    90%{left: -5850px;}
+    100%{left: 0;}
+
+}
+
+.ani li:nth-child(1){
+    background: url(/2th/images/scroll1.jpeg);
+    background-size: cover;
+    
+}
+.ani li:nth-child(2){
+    background: url(/2th/images/scroll2.jpeg);
+    background-size: cover;
+}
+.ani li:nth-child(3){
+    background: url(/2th/images/scroll3.jpeg);
+    background-size: cover;
+}
+.ani li:nth-child(4){
+    background: url(/2th/images/scroll4.jpeg);
+    background-size: cover;
+}
+.ani li:nth-child(5){
+    background: url(/2th/images/scroll5.jpeg);
+    background-size: cover;
+}
+.ani li:nth-child(6){
+    background: url(/2th/images/scroll6.jpeg);
+    background-size: cover;
+}
+.ani li:nth-child(7){
+    background: url(/2th/images/scroll7.jpeg);
+    background-size: cover;
+}
+.ani li:nth-child(8){
+    background: url(/2th/images/scroll8.jpeg);
+    background-size: cover;
+}.ani li:nth-child(9){
+    background: url(/2th/images/scroll9.jpeg);
+    background-size: cover;
+}.ani li:nth-child(10){
+    background: url(/2th/images/scroll10.jpeg);
+    background-size: cover;
+}
