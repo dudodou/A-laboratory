@@ -35,6 +35,9 @@ body{
 h1{
     font-size: 100px;
 }
+h1:hover{
+    cursor: default;
+}
 .index_container{
     position: relative;
     margin-top: 25px;
