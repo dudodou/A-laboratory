@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 자바스크립트 이벤트 </title>
+</head>
+
+<body>
+    <div id="item">
+        <img src="/images/travis_scott.jpeg" width="250px">
+        <button class="over" id="open" onclick="showDetail()">상세 설명 보기</button>
+        <!-- 사진에 대한 내용 -->
+        <div id="desc" class="detail">
+            <h4>트래비스 스캇</h4>
+            <p>미국의 힙합 뮤지션.
+
+                트랩을 필두로 불어온 힙합 열풍속에서 2010년대 중후반부터 미국을 대표하는 래퍼들 중 한 명으로 떠올랐다.
+                독특한 오토튠 활용과 화려한 멜로디, 과격한 라이브 콘서트로 많은 인기를 끌었다.
+                칸예 웨스트의 수제자로 유명하며, 3집의 흥행 전에는 카일리 제너의 애인으로 유명했다.</p>
+            <button id="close" onclick="hideDetail()"> 상세 설명 닫기 </button>
+        </div>
+    </div>
+    <script>
+        function showDetail(){
+            // 상세 설명 부분을 화면에 표시
+            document.querySelector('#desc').style.display = "block";
+        }
+        function hideDetail(){
+            // 상세 설명 부분을 화면에서 감춤
+            document.querySelector('#desc').style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

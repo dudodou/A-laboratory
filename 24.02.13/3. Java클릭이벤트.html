@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 클릭 이벤트 </title>
+    <style>
+        #result{
+            width: 50px;
+            height: 50px;
+            border: 1px solid;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <!-- 함수 사용 (각각의 색이 인수) -->
+        <li><a href="#" onclick="changeBg('green')">Green</a></li>
+        <li><a href="#" onclick="changeBg('orange')">orange</a></li>
+        <li><a href="#" onclick="changeBg('purple')">purple</a></li>
+    </ul>
+
+    <!-- 결과 창 -->
+    <div id="result"></div>
+
+    <script>
+        // 함수 선언 부분 / 함수명(매개변수)
+        function changeBg(color){
+            let result = document.querySelector('#result');
+            result.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
