@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.toplogo{
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+h1{
+    font-family: 'Creepster', system-ui;
+    
+}
+a{
+  text-decoration: none;
+    color: black;
+}
+ul li{
+    margin: 0 100px;
+}
+.nav li{
+    font-family: 'Bebas Neue', sans-serif;
+}
+ul{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+.nav li a:hover{
+    cursor: pointer;
+    color: gray;
+    transition: 0.4s;
+}
+table{
+    display: table;
+    box-sizing: border-box;
+    text-align: center;
+        font-size: 30px;
+        position: relative;
+        top: 300px;
+        left: 410px;
+        /* border: 1px solid black; */
+}
+h2{
+    position: absolute;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 40%;
+    font-size: 400%;
+        font-family: "Luckiest Guy", cursive;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+i .fa-ghost{
+    color: black;
+}
+td .name{
+    
+}
