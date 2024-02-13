@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 평균 점수 </title>
 </head>
+
 <body>
-    
+    <script>
+        // 3과목의 점수를 입력받아 화면 평균점수를 출력
+        let kor1 = Number(prompt('국어 점수는?'));
+        let kor2 = Number(prompt('수학 점수는?'));
+        let kor3 = Number(prompt('영어 점수는?'));
+        let name = prompt('당신의 이름을 알려주세요');
+        let sum = kor1 + kor2 + kor3;
+        // 3과목의 합산
+        // let sum = ?????
+        // 3과목의 평균 점수
+        let avg = sum / 3;
+        // 화면에 출력
+        document.write(name + "님의 평균점수는, " + avg + "입니다. <br>");
+        document.write(name + "님 축하드립니다!!");
+    </script>
 </body>
+
 </html>
