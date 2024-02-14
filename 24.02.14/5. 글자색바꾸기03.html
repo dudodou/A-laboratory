@@ -11,13 +11,13 @@
 
     <script>
         // 방법1 : 웹 요소를 변수로 지정 & 미리 만든 함수 사용
-        let changeBtn = document.querySelector("#change");
-        changeBtn.onclick = changeColor;
+        // let changeBtn = document.querySelector("#change");
+        // changeBtn.onclick = changeColor;
 
         // 기능을 묶어주는 함수
-        function changeColor(){
-            document.querySelector("p").style.color = "green";
-        }
+        // function changeColor(){
+        //     document.querySelector("p").style.color = "green";
+        // }
 
         // 방법2 : 웹 요소를 따로 변수로 만들지 않고 사용
         // document.querySelector("#change").onclick = changeColor;
@@ -26,10 +26,10 @@
         // function changeColor(){
         //     document.querySelector("p").style.color = "green";
         // }
-        // 방법3 : 함수를 직접 선언 (함수명은 없다.)
-        // document.querySelector("#change").onclick = function(){
-        //     document.querySelector("p").style.color = 'orangered';
-        // }
+        // 방법3 : 함수를 직접 선언 (함수명은 없다.)(익명함수라고도 불림.)
+        document.querySelector("#change").onclick = function(){
+            document.querySelector("p").style.color = 'orangered';
+        }
     </script>
 </body>
 </html>
