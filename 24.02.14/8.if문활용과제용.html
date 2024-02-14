@@ -6,6 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        let userNumber = Number(prompt('어떤 숫자인가요?'));
+        
+
+        if (userNumber %2 === 0){
+            userNumber1 = '짝수 입니다!'
+        }else{
+            userNumber1 = '홀수 입니다!'
+        }
+
+        document.write(userNumber + "은(는)" + userNumber1);
+    </script>
 </body>
 </html>
