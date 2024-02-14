@@ -1,0 +1,265 @@
+<html>
+
+<head>
+    <!-- 폰트어썸CDN : -->
+    <script src="https://kit.fontawesome.com/4ec79785b5.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        font-size: 3vw;
+    }
+    h2 {
+        color: red;
+    }
+
+    .highlight {
+        border: solid;
+    }
+
+    /* 파일04번 변경부분 (그리드 적용) */
+    .thumnail_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .thumnail {
+        width: 100%;
+    }
+
+    /* 게시물, 팔로워, 팔로우 */
+    #stat_bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    /* 프로필 사진 */
+    .circle_pic {
+        border: 1px solid black;
+        border-radius: 50%;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        /* fill 미디어를 부모 요소에 꽉 들어맞게 채움. 찌그러짐
+        contain 미디어 비율을 유지한 채, 부모 요소 밖으로 튀어 나가지 않도록 크기 축소
+        cover 미디어 일부 부모 요소 밖으로 빠져나가더라도 비율유지 꽉 들어맞게 */
+    }
+/* 245 사이즈 변경 */
+    #profile_pic {
+        width: 15vh;
+        height: 15vw;
+    }
+
+    #highlight_pic {
+        width: 10vw;
+        height: 10vw;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* 파일05 하이라이트 영역 211 */
+    #highlight_area {
+        display: grid;
+        /* 245 사이즈 단위 변경 */
+        grid-template-columns: 12vw 12vw 1fr;
+    }
+
+    .highlight {
+        text-align: center;
+    }
+
+    /* 파일06 프로필 부분 */
+    #profile {
+        display: grid;
+        grid-template-columns: 1fr 3.5fr;
+    }
+
+    #profile_info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+/* 247 */
+        height: 15vw;
+    }
+
+    #id {
+        font-size: 6vw;
+        font-weight: 100;
+    }
+
+    button {
+        width: 95%;
+        height: 80%;
+
+        font-size: 3vw;
+        background-color: gray;
+        border: 1px solid gray;
+        border-radius: 3px;
+        /* 227페이지 blue 보더를 없앤다. */
+    }
+    #top{
+        display: grid;
+        grid-template-columns: 4fr 7fr 5fr;
+        /* 246 */
+        height: 10vh;
+        min-height: 10vh;
+        border: solid gray 0.1px;
+        margin-bottom: 3vw;
+    }
+    /* 229페이지 로고와 검색창의 디자인 개선 */
+    #top img{
+        margin-left: auto;
+        margin-right: auto;
+
+        height: 100%;
+        object-fit: contain;
+    }
+    /* 230페이지  */
+    #top input{
+        width: 95%;
+        height: 60%;
+        
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        text-align: center;
+        background-color: rgb(250, 250, 250);
+
+        border: solid gray 1px;
+        border-radius: 3px;
+
+        font-size: 3vw;
+        font-weight: 100;
+    }
+    i{
+        color: gray;
+        /* 236 */
+    }
+    #top i{
+        font-size: 4vw;
+    }
+    #top div{
+        text-align: center;
+        padding-top: 3vw;
+    }
+    /* 하단 아이콘 5개 삽입 239페이지 */
+    #sub_icons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        text-align: center;
+        font-size: 5vw;
+
+        height: 8vw;
+    }
+    .selected{
+        border-bottom: solid gray 1px;
+    }
+    
+</style>
+<!-- 228페이지 id부여 top -->
+<body>
+    <div id="top">
+        <img src="https://img.freepik.com/premium-vector/instagram-app-icon-social-media-logo-vector-illustration_277909-403.jpg?size=338&ext=jpg&ga=GA1.1.44546679.1706140800&semt=ais"
+            alt="인스타그램으로 가기" width="50">
+        <input type="search" value="검색">
+        <!-- 232페이지 폰트어썸 추가 -->
+        <div>
+            <i class="fas fa-home"></i>
+            <i class="fas fa-paper-plane"></i>
+            <i class="fas fa-compass"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+    </div>
+    <div id="profile">
+        <img src="data:image/png;base64,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"
+            alt="프로필사진" class="circle_pic" id="profile_pic">
+        <div id="profile_info">
+            <div id="id">duuu_doo
+                <i class="fas fa-cog"></i>
+            </div>
+            <button>프로필 편집</button>
+        </div>
+    </div>
+    <p>
+        <strong>김동욱 (donguk Kim)<br /></strong>
+        백수<br />
+    </p>
+    <p>
+        <a href="https://github.com/dudodou/A-laboratory.git" target="_blank">dudodou/A-laboratory.git</a><br />
+    </p>
+    <p>
+
+        <!-- 하이라이트 이미지 삽입 -->
+    <div id="highlight_area">
+        <div class="highlight">
+            <div>
+                <img src="../images/bonobono.jpg" class="circle_pic" id="highlight_pic">
+            </div>
+            <div>😎</div>
+        </div>
+        <div class="highlight">
+            <div>
+                <img src="../images/skatebord gif ver.gif" class="circle_pic" id="highlight_pic">
+            </div>
+            <div>🥰</div>
+        </div>
+    </div>
+
+    <div id="stat_bar">
+        <div class="stat">
+            게시물<br />
+            14
+        </div>
+        <div class="stat">
+            팔로워<br />
+            162
+        </div>
+        <div class="stat">
+            팔로우<br />
+            167
+        </div>
+    </div>
+    <!-- <div>아이콘이 들어갈 자리</div> -->
+    <div id="sub_icons">
+        <div class="selected"><i class="fas fa-border-all"></i></div>
+        <div class="selected"><i class="fas fa-border-all"></i></div>
+        <div class="selected"><i class="fas fa-border-all"></i></div>
+        <div class="selected"><i class="fas fa-border-all"></i></div>
+        <div class="selected"><i class="fas fa-border-all"></i></div>
+    </div>
+    <div>
+        게시물 썸네일이 들어갈 자리 <br />
+        <!-- 같은 내용 수정 option + command + 방향키 -->
+        <div class="thumnail_grid">
+            <img src="../images/instagram.png" class="thumnail_grid">
+            <img src="../images/instagram.png" class="thumnail_grid">
+            <img src="../images/instagram.png" class="thumnail_grid">
+        </div>
+        <div class="thumnail_grid">
+            <img src="../images/instagram.png" class="thumnail_grid">
+            <img src="../images/instagram.png" class="thumnail_grid">
+            <img src="../images/instagram.png" class="thumnail_grid">
+        </div>
+        <div class="thumnail_grid">
+            <img src="../images/instagram.png" class="thumnail_grid">
+            <img src="../images/instagram.png" class="thumnail_grid">
+            <img src="../images/instagram.png" class="thumnail_grid">
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- 150 153 156 206 217페이지까지 -->
+<!-- 파일05 하이라이트영역 그리드 지정 218 -->
+<!-- 223 profile_info 아이디 부여 -->
