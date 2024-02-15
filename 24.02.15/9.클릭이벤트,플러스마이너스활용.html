@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 클릭 이벤트 과제용 </title>
+    <style>
+        #main {
+            font-size: 700px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            margin-left: 20px;
+            border: 1px solid;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .red:hover {
+            background-color: red;
+            cursor: pointer;
+        }
+
+        .orange:hover {
+            background-color: orange;
+            cursor: pointer;
+        }
+
+        .yellow:hover {
+            background-color: yellow;
+            cursor: pointer;
+        }
+
+        .green:hover {
+            background-color: green;
+            cursor: pointer;
+        }
+
+        .blue:hover {
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        .navy:hover {
+            background-color: navy;
+            cursor: pointer;
+        }
+
+        .purple:hover {
+            background-color: purple;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="red"><a href="#" onclick="changeBg('red')">빨강</a></li>
+        <li class="orange"><a href="#" onclick="changeBg('orange')">주황</a></li>
+        <li class="yellow"><a href="#" onclick="changeBg('yellow')">노랑</a></li>
+        <li class="green"><a href="#" onclick="changeBg('green')">초록</a></li>
+        <li class="blue"><a href="#" onclick="changeBg('blue')">파랑</a></li>
+        <li class="navy"><a href="#" onclick="changeBg('navy')">남색</a></li>
+        <li class="purple"><a href="#" onclick="changeBg('purple')">보라</a></li>
+    </ul>
+
+    <div id="main">0</div>
+    <a href="#" id="btnPlus"> plus </a>
+    <a href="#" id="btnMinus"> minus </a>
+    <div class="inText"></div>
+
+    <script>
+        const $btnPlus = document.getElementById("btnPlus");
+        const $btnMinus = document.getElementById("btnMinus");
+        let $inText = document.querySelector(".inText");
+        let num = 0; // 제어할 숫자를 0으로 초기화
+
+        // btnPlus를 클릭할 때마다 함수
+        $btnPlus.addEventListener("click", e => {
+            e.preventDefault(); // 새로고침 방지
+            num++; // 1씩 증가
+            console.log(num);
+        })
+
+
+        // btnMinus를 클릭할 떄마다 함수
+        $btnMinus.addEventListener("click", e => {
+            e.preventDefault();
+            num--;
+            console.log(num);
+        })
+
+        function changeBg(color) {
+            let main = document.querySelector('#main');
+            main.style.color = color;
+        }
+    </script>
+</body>
+
+</html>
