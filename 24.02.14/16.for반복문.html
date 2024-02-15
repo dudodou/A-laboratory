@@ -41,9 +41,27 @@
         //     sumFor += i;
         // }
         // document.write(`1부터 1000까지 for 이용 합계 ${sumFor}`);
+        // 짝수 더하기 방법1
+        let sumEven = 0;
+        for (let k = 0; k < 11; k += 2) {
+            sumEven += k;
+        }
+        document.write("짝수더하기" + sumEven);
+
+        // 짝수 더하기 방법2
+        let n = 10;
+        let sumE = 0;
+        for (let i = 1; i <= n; i++) {
+            if(i % 2 === 1 )
+            // i가 홀수라면 건너뜀.
+        continue;
+        sumE += i;
+        document.write(i + "-----" + sumE + "<br>");
+        }
 
         // 1~10까지 숫자 중 for 짝수만 더하기, 홀수만 더하기
         // 별찍기
+        
     </script>
 </body>
 </html>
