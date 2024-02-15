@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 마우스 이벤트02 </title>
+</head>
+<body>
+    <img src="/images/double_knee_brown.jpeg" id="cover">
+    <!-- 이미지 불러온 뒤에 경로 복사, 붙여넣기 -->
+    <!-- <img src="/images/double_knee_brown.jpeg"> -->
+
+    <script>
+        // 마우스 올렸을 때 mouseover, dblclick, mousemove
+        let cover = document.getElementById("cover");
+        cover.addEventListener("dblclick", function(){
+            cover.src = "/images/double_knee_brown2.jpeg";
+        })
+
+        //마우스 이미지 밖으로
+        cover.addEventListener("mouseleave", function(){
+            cover.src = "/images/double_knee_brown.jpeg";
+        })
+    </script>
+</body>
+</html>

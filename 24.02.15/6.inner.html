@@ -7,7 +7,7 @@
 </head>
 <body>
     <button onclick="innText()"> innerText로 표시하기 </button>
-    <button onclick="innHMTL()"> innerHTML로 표시하기 </button>
+    <button onclick="innHTML()"> innerHTML로 표시하기 </button>
     <button onclick="textCon()"> textContent로 표시하기 </button>
     <pre>
         textContent 속성 : 요소의 텍스트 콘텐츠만 반환하거나
@@ -24,7 +24,7 @@
         function innText(){
             document.getElementById("current").innerText = now;
         }
-        function innerHTML(){
+        function innHTML(){
             document.getElementById("current").innerHTML = "<em>" + now + "</em>";
         }
         function textCon(){
