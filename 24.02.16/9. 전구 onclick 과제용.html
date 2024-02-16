@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전구 onclick</title>
+    <style>
+        #img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>What Can JavaScript Do?</h1>
+
+    <p>☝️ onclick 사용</p>
+
+    <img src="/images/light_on.png" id="img">
+
+    <button onclick="on()">Turn on the light</button>
+    <button onclick="off()">Turn off the light</button>
+
+    <script>
+        // const img = document.getElementById("img");
+        // const on = document.getElementById("on");
+        // const off = document.getElementById("off");
+
+        function on(){
+            img.src = "/images/light_on.png";
+        }
+
+        function off(){
+            img.src = "/images/light_off.png";
+        }
+    </script>
+</body>
+</html>

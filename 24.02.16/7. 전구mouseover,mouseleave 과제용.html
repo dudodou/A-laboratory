@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전구 onclick</title>
+</head>
+<body>
+    <h1>What Can JavaScript Do?</h1>
+
+    <p>☝️ mouseover, mouseleave 사용</p>
+
+    <img src="/images/light_on.png" id="light">
+    <!-- <img src="/images/light_off.png" id="lgtoff"> -->
+
+<!-- <button onclick="Turnon" id="on">Turn on the light</button>
+<button onclick="Turnoff" id="off">Turn off the light</button> -->
+
+    <script>
+        let light = document.getElementById("light");
+        light.addEventListener("mouseover", function(){
+            light.src = "/images/light_on.png";
+        })
+
+        light.addEventListener("mouseleave", function(){
+            light.src = "/images/light_off.png";
+        })
+    </script>
+</body>
+</html>
