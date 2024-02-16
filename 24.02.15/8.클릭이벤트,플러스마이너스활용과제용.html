@@ -74,14 +74,13 @@
     </ul>
 
     <div id="main">0</div>
-    <a href="#" id="btnPlus"> plus </a>
-    <a href="#" id="btnMinus"> minus </a>
-    <div class="inText"></div>
+    <button id="btnPlus"> + </button>
+    <button id="btnMinus"> - </button>
 
     <script>
         const $btnPlus = document.getElementById("btnPlus");
         const $btnMinus = document.getElementById("btnMinus");
-        let $inText = document.querySelector(".inText");
+        let $main = document.querySelector("#main");
         let num = 0; // 제어할 숫자를 0으로 초기화
 
         // btnPlus를 클릭할 때마다 함수
@@ -89,13 +88,15 @@
             e.preventDefault(); // 새로고침 방지
             num++; // 1씩 증가
             console.log(num);
+            $main.innerText = num;
         })
 
-        // btnMinus를 클릭할 떄마다 함수
+        // btnMinus를 클릭할 때마다 함수
         $btnMinus.addEventListener("click", e => {
             e.preventDefault();
             num--;
             console.log(num);
+            $main.innerText = num;
         })
 
         function changeBg(color) {

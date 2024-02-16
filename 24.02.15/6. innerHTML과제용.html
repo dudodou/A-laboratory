@@ -12,23 +12,24 @@
 </head>
 <body>
     <div id="innerH"></div>
+    <div id="innerHT"></div>
     <h2>갖고싶은거</h2>
     <button onclick="first()"> 1순위 </button>
     <button onclick="sec()"> 2순위 </button>
 
     <script>
         function first(){
-            let img = img(/images/black_double_knee.jpeg);
-            let name = "칼하트더블니블랙";
-            console.log(img + name);
-            document.getElementById("innerH").innerHTML=(img+"<br>"+name);
+            let name1 = "칼하트"
+            let name2 = "더블니블랙";
+            console.log(name1 + name2);
+            document.getElementById("innerH").innerHTML=(name1+name2);
         }
         
         function sec(){
             let number = 14406;
             let size = "34x32";
             console.log(number + size);
-            document.getElementById("innerH").innerHTML=(number+"<br>"+size);
+            document.getElementById("innerHT").innerHTML=(number+size);
             number.moveBy(100.300);
         }
         
