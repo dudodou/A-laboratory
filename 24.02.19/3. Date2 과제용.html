@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 낮,밤 </title>
+</head>
+<body>
+    <div id="container">
+
+        <!-- <img src="/images/black_double_knee.jpeg" alt="낮">
+        <img src="/images/double_knee_brown.jpeg" alt="밤"> -->
+    </div>
+
+    <script>
+        const today = new Date();
+        const hrs = today.getHours();
+        const container = document.querySelector("#container");
+
+        let otherImg = document.createElement("img");
+        otherImg.src = (hrs < 12) ? "/images/black_double_knee.jpeg" : "/images/double_knee_brown.jpeg";
+        container.appendChild(otherImg);
+</script>
+</body>
+</html>
