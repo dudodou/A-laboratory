@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 낮,밤 </title>
+</head>
+<body>
+    <div id="container">
+
+        <!-- <img src="/images/black_double_knee.jpeg" alt="낮">
+        <img src="/images/double_knee_brown.jpeg" alt="밤"> -->
+    </div>
+
+    <script type="text/javascript">
+
+        var hour = function() {
+    
+            var fname ="";
+    
+            var today =new Date();
+    
+            var hh = today.getHours();
+    
+            if(hh>=9 && hh<=19)
+    
+            {
+    
+                fname="https://cdn.ibos.kr/og-BD1486504-42094.gif?v=1684202939";
+    
+            }
+    
+            else
+    
+            {
+    
+                fname="https://edgio.clien.net/F01/6557418/3fdeeb0ce4ee7f.gif?scale=width[740],options[limit]";
+    
+            }
+    
+            document.getElementById("time").src=fname;
+    
+        }
+        
+    </script>
+    </body>
+</html>
