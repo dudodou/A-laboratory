@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전구3</title>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <p> 이미지 직접 사용 </p>
+
+    <img src="/images/stussy magazine_2.jpeg" id="myImage"> <br>
+
+    <script>
+        let $myImage = document.getElementById('myImage');
+        $myImage.onclick = changePic1;
+
+        function changePic1(){
+            $myImage.src = "/images/stussy magazine_3.jpeg"
+        }
+    </script>
+</body>
+</html>

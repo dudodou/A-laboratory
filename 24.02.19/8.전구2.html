@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전구2</title>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <p> addEventListener 사용 </p>
+
+    <img src="/images/stussy magazine_2.jpeg" id="myImage"> <br>
+    <button id="onBtn">켜기</button>
+    <button id="offBtn">끄기</button>
+
+    <script>
+        let $myImage = document.getElementById('myImage');
+        let $onBtn = document.getElementById('onBtn');
+        let $offBtn = document.getElementById('offBtn');
+
+        $onBtn.addEventListener("click", changePic1); // 클릭하면 함수실행
+        $offBtn.addEventListener("click", changePic2); // 클릭하면 함수실행
+
+        function changePic1(){
+            $myImage.src = "/images/stussy magazine_3.jpeg"
+        }
+        function changePic2(){
+            $myImage.src = "/images/stussy magazine_2.jpeg"
+        }
+    </script>
+</body>
+</html>
