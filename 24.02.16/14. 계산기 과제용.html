@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기 과제용</title>
+    <head>
+    <style>
+        body{
+            text-align: center;
+            width: 100 auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1> 계산기 </h1>
+    <p>두 수를 입력한 후 [계산하기]를 클릭하세요.</p>
+
+    <div>
+    <input type="text" name="first" id="first" placeholder="첫번째 수">
+    <input type="text" name="sec" id="sec" placeholder="두번째 수">
+    </div>
+<br>
+    <button id="cal">계산하기</button>
+
+    <div id="price"></div>
+
+    <div id="result"></div>
+    <script>
+        const first = document.addEventListener("first");
+        const sec = document.addEventListener("sec");
+
+
+        var price = first - (first * sec / 100);
+
+        price("할인된 가격은" + price.toFixed(2) + "원 입니다.");
+
+
+
+    </script>
+</body>
+</html>
