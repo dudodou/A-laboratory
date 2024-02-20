@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 탭 예제 </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Gloria+Hallelujah&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
     <style>
         .tab-button.active {
-            background-color: violet;
+            background-color: rgba(128, 128, 0, 0.547);
         }
 
         .tab-content.active {
@@ -20,7 +27,23 @@
             width: 300px;
             height: 100px;
             border: 3px solid;
-            font-size: 20px;
+            font-size: 23px;
+            border-radius: 20px;
+        }
+        .tabs{
+            display: block;
+            justify-content: space-around;
+            text-align: center;
+        }
+        pre{
+            font-size: 35px;
+            font-family: "Gaegu", sans-serif;
+            font-weight: bold;
+        }
+        h1{
+            font-size: 100px;
+            text-align: center;
+            font-family: "Gloria Hallelujah", cursive;
         }
         
         
@@ -30,33 +53,97 @@
 
 <body>
     <div class="tabs">
-        <button class="tab-button active" onclick="openTab(event, 'tab1')">탭1</button>
-        <button class="tab-button" onclick="openTab(event, 'tab2')">탭2</button>
-        <button class="tab-button" onclick="openTab(event, 'tab3')">탭3</button>
+        <button class="tab-button active" onclick="openTab(event, 'tab1')">Stüssy</button>
+        <button class="tab-button" onclick="openTab(event, 'tab2')">Supreme</button>
+        <button class="tab-button" onclick="openTab(event, 'tab3')">Thrasher</button>
     </div>
 
     <div id="tab1" class="tab-content">
-        <h3> 탭 1의 제목 </h3>
+        <h1> Stüssy </h1>
+        <img src="/images/stussy magazine_1.jpeg" width="700px">
+        <img src="/images/stussy magazine_2.jpeg" width="750px">
+        <img src="/images/Stussy magazine_4.jpeg" width="700px">
         <pre>
-            11111111번탭의 내용입니다.
-            탭 1의 내용입니다.
-            탭 1의 내용입니다.
+            스투시는 1980년 SHAWN STUSSY라는 서프보드에 열광하는 CREW가 만든 브랜드 입니다. 
+
+            스투시의 특유의 로고는 SHAWN STUSSY의 삼촌이 만든 로고로 지금은 스트릿웨어에서 빼놓을수 없는 브랜드로 자리 잡았지만 
+
+            스투시의 시초는 캘리포니아에서 그가 티셔츠와 서프보드를 만들면서 시작된 작은 브랜드였습니다. 
+                        
+            스투시의 성공요인은 언제나 열린마인드로 도쿄와 런던 뉴욕의 보더, DJ등과 교류를 하며 그들의 문화를 콘셉트으로 잡고 
+
+            1970~80년대 영국 펑크의 DIY정신까지 받아들여 현재까지 독립적이며 모든 스트릿 문화를 좋아하는 사람들이 동경하는 브랜드로 자리 잡았습니다.
         </pre>
     </div>
     <div id="tab2" class="tab-content">
-        <h3> 탭 2의 제목</h3>
+        <h1> Supreme </h1>
+        <img src="/images/Supreme®_magazine1.jpeg" alt="">
+        <img src="/images/Supreme®_magazine2.jpeg" alt="">
+        <img src="/images/Supreme®_magazine3.jpeg" alt="" width="700px">
         <pre>
-            2222222222번탭의 내용입니다.
-            탭 2의 내용입니다.
-            탭 2의 내용입니다.
+        슈프림은 스트릿 브랜드의 끝판왕이라 불리며 희귀성으로 유명하다. 그만큼 골수 팬들이 많으며, 오프화이트의 창립자 버질 아블로도 
+            
+        '슈프림은 나의 루이비통이다'라고 말한 적이 있다. 스케이트 보드 문화를 지탱하는 브랜드인 만큼 각종 스케이트 보드 관련 장비도 발매하며,
+            
+        뉴욕의 매장에는 문턱이 없어 스케이트 보드를 탄 채로 그냥 들어올 수 있게 해 두는 등 여전히 보더들의 브랜드다운 모습을 보여주고 있다.
+            
+        이러다보니 당연히 미국의 유명 스케이트보드 잡지인 트레셔와 콜라보도 하였다. 설립자인 제임스 제비아는 미국에서 태어났지만 19살까지 영국에서 보냈다.
+            
+        슈프림도 영국에 입점해 있고 영국 래퍼 Octavian을 모델로 쓰는 등 영국과도 관련이 깊다. 슈프림은 뭇 스케이터, 힙합퍼, 힙스터, 그냥 스트릿 패셔니스타, 
+            
+        학생에게도 큰 인기를 얻는 브랜드답게 타 의류업체와는 다르게 인기를 실감할 수 있는 점이 여럿 있다. 거의 대부분의 아이템이 발매와 동시에 매진되거나
+            
+        며칠 안에 매진이 되며 특히 모자나 후드, 티셔츠는 남아나는 일이 없다. 이러한 이유로 발매가가 150달러(한화로 약 18만원)인 가장 인기템 기본 박스 
+            
+        로고 후드 제품의 매물 거래가가 한화로 120만원(!)까지 뛰는 현상이 발생한다. 스웨트 셔츠 재질의 후드 셔츠와 팬츠의 대부분의 제조국은 캐나다로 
+            
+        다른 스트릿 제품들과 달리 퀄리티가 상당히 괜찮은 편이다. 2018년 기준 반팔티는 미국의 '챕터4'라는 공장에서 만들고 있으며, 재질이 우수하다.
+            
+        앞의 이야기는 말도 안되는 소리고 디자인이라면 모를까 단순히 반팔티의 재질만큼은 유니클로보다도 못하다. 또한 핫한 아이템이 나온다는 소문이
+            
+        있으면 마치 축구계에서 이적 소문이 도는 것처럼 제품 실사의 유출사진, 다음 시즌 콜라보레이션 예상 라인업 따위가 돌아다니기도 한다.
+
+        다만 이와같이 너무나도 커진 인기와 되팔이들로 인한 따른 비정상적인 가격 상승으로 인해 해외, 특히 현지인 미국에서는 슈프림이 추구하는 문화를
+            
+        즐기는 이들 대부분에게는 너무나도 멀어져버려 슈프림, 특히 박스 로고와 같은 희귀하고 되팔이 가격이 높기만 한 제품들만 광적으로 찾는 
+            
+        이들을 부모등골 빼먹는 급식충, 하입비스트 혹은 비싼 것만 좋아하는 중국 갑부 유학생 등으로 비난하며 
+            
+        다른 스케이터 브랜드를 찾는 이들도 늘어가는 추세이다. 진정 슈프림을 사랑하는 사람들은 되팔이 가격이 정가 이하인 제품들도 즐겨 입는다.
+
+        슈프림에서 일하던 사람들이 NOAH, Awake 등을 설립하면서 슈프림은 우수한 패션 브랜드들을 배출하기도 한다는 평을 듣게 된다. 
+            
+        특히 Awake는 슈프림과 사뭇 다르면서도 적극적인 콜라보레이션을 기획하는 능력은 슈프림과 닮았다.
+
         </pre>
     </div>
     <div id="tab3" class="tab-content">
-        <h3>탭 3의 제목</h3>
+        <h1>Thrasher</h3>
+            <img src="/images/Thrasher_magazine1.jpeg" alt="">
+            <img src="/images/Thrasher_magazine2.jpeg" width="700px">
+            <img src="/images/Thrasher_magazine3.jpeg" width="700px">
         <pre>
-            3333333333번탭의 내용입니다.
-            탭 3의 내용입니다.
-            탭 3의 내용입니다.
+            미국의 스케이트보드 잡지. 브랜드를 내세운 옷이나 선글라스, 잡화 등도 판매한다. 비교적 저렴한 가격대로 미국에선 재고도 넉넉한 편이지만, 
+            
+            이상하게 한국에선 고급 브랜드로 인식되어 비싸게 팔리고 있다. 국내에서 트래셔, 쓰레셔로도 불리고 있다.
+           
+            1981년 당시 유명보드팀이었던 "INDEPENDENT" 소속의 보더 KEVIN THATCHER와 FAUSTO VITELL(R.I.P)가 손을 잡고 스케이트보드 매거진을
+            
+            발행하는데 이것이 바로 "THRASHER"의 시작입니다. THRASHER MAG은 매달 최신 트릭과 패션 그리고 부품들을 사진이나 기사를 통해 소개,
+            
+            이 밖에도 다양한 정보와 볼거리를 제공하며 다양한 프로젝트를 통해 스케이트보드의 성장을 이끌어왔습니다.
+
+            본래 스케이트보드 문화를 즐기는 이들이 입는 브랜드였으나, 몇 년 사이에 인지도가 많이 오르면서 일반인들도 죄다 입는 바람에 오히려
+            
+            '스케이트 문화도 모르는 패션 따라쟁이들'이라는 시선을 받을 때도 있다. 이런 식으로 장난을 치기도 한다.
+
+            이러니 저러니 해도 스케이트 문화의 선도자격 잡지답게 스케이트씬에서도 많이 애용한 Supreme과 콜라보한 전적도 있다.
+
+            로고의 폰트는 Banco 글씨체로, 한국에서는 4세대 문화방송 로고의 영문부분으로 유명하다. 문화방송체 현지화를 거친 한국을 제외한 
+            
+            해외에서 Banco 폰트라 하면 대중문화에 쓰인 사례중에서 가장 유명할 것이다.
+
+
         </pre>
     </div>
     <script>

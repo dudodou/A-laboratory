@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>줄 긋기</title>
+</head>
+
+<body>
+    <div id="container">
+        <h2>오늘 할 일</h2>
+        <p>계획을 실행 했을 시 클릭하여 주십시오.</p>
+        <hr>
+        <form id="subject">
+            <ul id="itemList">
+                <li><span class="check">할 일1</span></li>
+                <li><span class="check">할 일2</span></li>
+                <li><span class="check">할 일3</span></li>
+                <li><span class="check">할 일4</span></li>
+                <li><span class="check">할 일5</span></li>
+            </ul>
+        </form>
+    </div>
+
+
+    <script>
+        let listB = document.querySelectorAll(".check");
+
+        for(let i=0; i<listB.length; i++){
+            listB[i].addEventListener("click", function(){
+                this.style.color = "blue";
+                this.style.backgroundColor = "violet";
+                this.style.fontSize = "20px";
+            })
+        }
+    </script>
+</body>
+
+</html>

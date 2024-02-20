@@ -6,41 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>다크, 데이모드</title>
     <style>
-      body {
-  color: #222;
-  background: #fff;
-}
-body.dark-theme {
-  color: #eee;
-  background: #121212;
-}
-
-a {
-  color: #0033cc;
-}
-body.dark-theme a {
-  color: #809fff;
-}
+      .DARK-MODE{
+        background-color: black;
+      }
+      .DARK-MODE h1, .DARK-MODE .mode-pre{
+        color:  white;
+      }
+      .DARK-MODE #container{
+        border: 3px dashed white;
+      }
+      #whiteBtn{
+        cursor: pointer;
+      }
+      #container{
+        border: 3px dashed black;
+      }
     </style>
 </head>
 <body>
-    <button class="btn-toggle">Toggle Dark-Mode</button>
-<h1>Hey there! This is just a title</h2>
-  <p>I am just a boring text, existing here solely for the purpose of this demo</p>
-  <p>And I am just another one like the one above me, because two is better than having only one</p>
-  <a href="#">I am a link, don't click me!</a>
-  
+  <div id="container">
+    <button id="whiteBtn">Toggle Dark-Mode</button>
+<h1 id="title">안녕하세요 다크모드 / 데이모드 페이지입니다.</h2>
+  <pre class="mode-pre">모드 전환 이전 이후 변경 효과</pre>
+</div>
   <script>
-    const btn = document.querySelector(".btn-toggle");
-const theme = document.querySelector("#theme-link");
+  var body = document.body;
+  var title = document.getElementById("#title");
+  var toggleDarkMode = document.getElementById("#whiteBtn");
 
-btn.addEventListener("click", function() {
-  if (theme.getAttribute("href") == "light-theme.css") {
-    theme.href = "dark-theme.css";
-  } else {
-    theme.href = "light-theme.css";
-  }
-});
+whiteBtn.onclick = function(){
+  body.classList.toggle("DARK-MODE");
+  title.innerText = body.classList.contains("DARK-MODE") ? "DARK MODE ON" : "DARK MODE OFF"
+}
   </script>
 </body>
 </html>
