@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 장바구니 </title>
+    <style>
+        #shoppingList {
+            width: 500px;
+            height: 300px;
+            border: 3px solid black;
+            border-style: dashed;
+            background-color: rgba(128, 128, 0, 0.333);
+            color: black;
+            font-weight: bolder;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 상품 내용이 나올 공간 -->
+    <div id="container">
+        <h1>찜한 상품</h1>
+        <h2> 구매하실 제품을 장바구니에 추가 해주세요.</h2>
+        <section class="product">
+            <div class="pdt">
+                <img src="/images/Reebok x JJJJound Club C White Olive.webp" alt="">
+                <h3> Reebok x JJJJound Club C White Olive 
+                    <br> 210,000원
+                </h3>
+                <button class="addItem"> 장바구니에 추가하기 </button>
+            </div>
+            <div class="pdt">
+                <img src="/images/Supreme x Thrasher Hooded Sweatshirt Ash Grey - 21FW.webp" alt="">
+                <h3> Supreme x Thrasher Hooded Sweatshirt Ash Grey - 21FW 
+                    <br> 500,000원</h3>
+                <button class="addItem"> 장바구니에 추가하기 </button>
+            </div>
+            <div class="pdt">
+                <img src="/images/Supreme Featherweight Down Puffer Jacket Olive - 23FW.webp" alt="">
+                <h3> Supreme Featherweight Down Puffer Jacket Olive - 23FW 
+                    <br> 500,000원 
+                </h3>
+                <button class="addItem"> 장바구니에 추가하기 </button>
+            </div>
+        </section>
+        <p> 좋아하는 것들 전부 장바구니에 담아보기 </p>
+    </div>
+    <!-- 장바구니 영역 -->
+    <div id="shoppingList"> 좋아하는 것들 </div>
+
+    <!-- id는 script에서 1회성으로 사용가능하고
+    class는 여러번 사용 가능하다. -->
+    <script>
+        const addItemButtons = document.querySelectorAll(".addItem"); // 장바구니 추가 버튼
+        const shoppingList = document.querySelector("#shoppingList"); // 장바구니 영역
+        // const titles = document.querySelectorAll(".pdt h3"); // pdt 안에 있는 h3 (모든 제품 명)
+
+        addItemButtons.forEach((addItemButton) => {
+            addItemButton.addEventListener("click", (e) => {
+                let newP = document.createElement("p"); // 새로운 p요소 노드 만들기
+                let textNode = document.createTextNode(e.target.previousElementSibling.innerText);
+                // 클릭된 버튼의 이전 요소의 텍스트 가져오기
+                newP.appendChild(textNode); // 텍스트 노드를 p요소 노드에 추가
+                shoppingList.appendChild(newP);
+
+                newP.style.fontSize = "20px";
+                newP.style.color = "brown";
+                newP.style.backgroundColor = "lightgray";
+            }, { once: true });
+        })
+    </script>
+</body>
+
+</html>
