@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 삭제 장바구니 </title>
+</head>
+<body>
+    <h1> Web Programming </h1>
+    <ul id="items">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        /* 1. 노드 삭제하기
+        remove() 메서드 사용하기
+        [기본형] 😃 요소.remove()
+        콘솔창에 아래 순차적으로 입력해보기
+        document.querySelector("h1")heading = document.querySelector("h1")
+        heading.remove()
+        제목이 지워진다.
+        아래 예제는 노드 자체를 삭제한다.
+        */
+
+        const title = document.querySelector("h1");
+
+        title.addEventListener("click", () => {
+            title.remove();
+        })
+
+        /* 2. 부모를 찾는 parentNode 프로퍼티 (괄호없음)
+        자식노드를 삭제해야 할 경우 이 방법 사용.
+        [기본형] 😃 노드.parentNode
+        콘솔창에 아래 입력
+        document.querySelector("h1").parentNode
+
+        🔴this 사용 시 주의 : 화살표 함수로 작성하면 안된다.
+        화살표함수에서 this는 window객체를 의미
+        화살표함수가 아닌 익명함수로 지정해야 한다.
+        */
+
+       const items = document.querySelectorAll("li"); // 모든 항목 가져오기
+
+    //    for(let item of items){ // 아이템 하나하나를 items에서 가져온다.
+    //     item.addEventListener("click", function(){
+    //         // function() <- ()는 익명함수라는 의미
+    //         // 항목 클릭했을 때 실행 할 함수
+    //         // this.parentNode.removeChild(this); // 부모 노드에서 삭제
+    //         this.remove(this);
+    //     })
+    //    }
+
+    //    🔴아래는 오류발생 🦴화살표함수로 this 사용안됨
+    for (let item of items){
+        item.addEventListener("click", () => {
+            this.parentNode.removeChild(this); // 오류발생
+        })
+    }
+
+    /* 3. 자식 노드를 제거하는 removeChild() 메서드
+     [기본형] 부모노드, removeChild(자식노드)*/
+</script>
+</body>
+</html>
