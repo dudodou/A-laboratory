@@ -75,7 +75,7 @@
         }
         // 비밀번호확인 필드와 같은지. // 오류메시지
         function comparePw(){
-            if(pw1.value != pw2.value){ // != : 달랐을때
+            if(pw1.value != pw2.value){ // != : 달랐을때, 다른지 / == : 같았을때, 같은지
                 alert("암호가 다릅니다. 다시 입력하세요.");
                 pw2.value = ""; // 비밀번호 필드를 지워줌
                 pw2.focus(); // 포커싱

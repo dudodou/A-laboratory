@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     <style>
-        #shoppingList {
+        #shopstyle {
             width: 500px;
             border: 3px solid black;
             border-style: dashed;
@@ -156,8 +156,14 @@
         <p> 좋아하는 것들 전부 장바구니에 담아보기 </p>
     </div>
     <!-- 장바구니 영역 -->
-    <aside>
+    <aside id="shopstyle">
     <div id="shoppingList"> 좋아하는 것들 </div>
+
+
+
+
+    <hr>
+    <div>합계 : <input type="hidden" id="total" name="total" class="price" readonly>원</div>
 </aside>
     <!-- id는 script에서 1회성으로 사용가능하고
     class는 여러번 사용 가능하다. -->
@@ -274,6 +280,10 @@
             let newPic6 = this.src;
             big3.setAttribute("src", newPic6);
         }
+
+        // 토탈 합계영역
+        let price = 0;
+        let 
     </script>
 </body>
 
