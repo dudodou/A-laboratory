@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 좋아하는 것들 </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
         #shopstyle {
             width: 500px;
             border: 3px solid black;
@@ -17,18 +22,20 @@
             color: black;
             font-weight: bolder;
         }
+
         h1 {
             font-family: "Nanum Myeongjo", serif;
         }
+
         h2 {
-              font-family: "Nanum Myeongjo", serif;
+            font-family: "Nanum Myeongjo", serif;
+        }
+        .pdt1, .pdt2, .pdt3, .pdt4, .pdt5, .pdt6, .pdt7, .pdt8, .pdt9 {
+            width: 300px;
         }
         .big-pic img {
             width: 300px;
             height: 300px;
-        }
-        .big-pic #big3{
-            width: 400px;
         }
 
         .product {
@@ -36,28 +43,9 @@
             justify-content: space-around;
             text-align: center;
         }
-        .small1{
-            width: 100px;
-            height: 80px;
-        }
-        .small2{
-            width: 100px;
-            height: 80px;
-        }
-        .small3{
-            width: 100px;
-            height: 80px;
-        }
-        .small4{
-            width: 100px;
-            height: 80px;
-        }
-        .small5{
-            width: 100px;
-            height: 80px;
-        }
-        .small6{
-            width: 100px;
+
+        .small1, .small2, .small3, .small4, .small5, .small6, .small7, .small8, .small9 {
+            width: 90px;
             height: 80px;
         }
     </style>
@@ -71,8 +59,8 @@
         <div class="product">
             <div class="pdt1">
                 <div class="big-pic">
-                <img src="/images/Reebok x JJJJound Club C White Olive.webp" id="big1">
-            </div>
+                    <img src="/images/Reebok x JJJJound Club C White Olive.webp" id="big1">
+                </div>
                 <div class="small-pic">
                     <img src="/images/jjjjound-reebok-club-olive-image3.avif" class="small1">
                     <img src="/images/jjjjound-reebok-club-olive-image2.webp" class="small1">
@@ -84,26 +72,26 @@
             </div>
             <div class="pdt2">
                 <div class="big-pic">
-                <img src="/images/Supreme x Thrasher Hooded Sweatshirt Ash Grey - 21FW.webp" id="big2">
-            </div>
-            <div class="small-pic">
-                <img src="/images/supreme_thrasher_hoodie_21fw_image1.jpeg" class="small2">
-                <img src="/images/supreme_thrasher_hoodie_21fw_image2.webp" class="small2">
-                <img src="/images/supreme_thrasher_hoodie_21fw_image3.webp" class="small2">
-            </div>
+                    <img src="/images/Supreme x Thrasher Hooded Sweatshirt Ash Grey - 21FW.webp" id="big2">
+                </div>
+                <div class="small-pic">
+                    <img src="/images/supreme_thrasher_hoodie_21fw_image1.jpeg" class="small2">
+                    <img src="/images/supreme_thrasher_hoodie_21fw_image2.webp" class="small2">
+                    <img src="/images/supreme_thrasher_hoodie_21fw_image3.webp" class="small2">
+                </div>
                 <h3> 현 시세가 : 500,000원</h3>
                 <h3> Supreme x Thrasher Hooded Sweatshirt - 21FW </h3>
                 <button class="addItem"> 장바구니에 추가하기 </button>
             </div>
             <div class="pdt3">
                 <div class="big-pic">
-                <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown.webp" id="big3">
-            </div>
-            <div class="small-pic">
-                <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown1.avif" class="small3">
-                <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown2.avif" class="small3">
-                <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown3.webp" class="small3">
-            </div>
+                    <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown0.jpg" id="big3">
+                </div>
+                <div class="small-pic">
+                    <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown1.avif" class="small3">
+                    <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown2.avif" class="small3">
+                    <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown3.webp" class="small3">
+                </div>
                 <h3> 현 시세가 : 341,000원 </h3>
                 <h3> Travis Scott x McDonald's Billions Served Work Jacket </h3>
                 <button class="addItem"> 장바구니에 추가하기 </button>
@@ -115,56 +103,101 @@
         <div class="product">
             <div class="pdt4">
                 <div class="big-pic">
-                <img src="/images/80s 올드 스투시 knowledge is king0.jpg" id="big4">
-            </div>
+                    <img src="/images/80s 올드 스투시 knowledge is king0.jpg" id="big4">
+                </div>
                 <div class="small-pic">
                     <img src="/images/80s 올드 스투시 knowledge is king1.jpg" class="small4">
                     <img src="/images/80s 올드 스투시 knowledge is king2.jpg" class="small4">
                     <img src="/images/80s 올드 스투시 knowledge is king3.jpg" class="small4">
                 </div>
                 <h3> 현 시세가 : 350,000원 </h3>
-                <h3> 80s vintage Old Stussy Knowledge is King T-shirts </h3>
+                <h3> 80s vintage Old Stussy Knowledge is King T-shirts L </h3>
                 <button class="addItem"> 장바구니에 추가하기 </button>
             </div>
             <div class="pdt5">
                 <div class="big-pic">
-                <img src="/images/90s 스투시 stussy big and meaty0.jpg" id="big5">
-            </div>
-            <div class="small-pic">
-                <img src="/images/90s 스투시 stussy big and meaty1.jpg" class="small5">
-                <img src="/images/90s 스투시 stussy big and meaty2.jpg" class="small5">
-                <img src="/images/90s 스투시 stussy big and meaty3.jpg" class="small5">
-            </div>
+                    <img src="/images/90s 스투시 stussy big and meaty0.jpg" id="big5">
+                </div>
+                <div class="small-pic">
+                    <img src="/images/90s 스투시 stussy big and meaty1.jpg" class="small5">
+                    <img src="/images/90s 스투시 stussy big and meaty2.jpg" class="small5">
+                    <img src="/images/90s 스투시 stussy big and meaty3.jpg" class="small5">
+                </div>
                 <h3> 현 시세가 : 500,000원</h3>
-                <h3> Supreme x Thrasher Hooded Sweatshirt - 21FW </h3>
+                <h3> 90s old stussy big and meaty L </h3>
                 <button class="addItem"> 장바구니에 추가하기 </button>
             </div>
             <div class="pdt6">
                 <div class="big-pic">
-                <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown.webp" id="big6">
-            </div>
-            <div class="small-pic">
-                <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown1.avif" class="small6">
-                <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown2.avif" class="small6">
-                <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown3.webp" class="small6">
-            </div>
-                <h3> 현 시세가 : 341,000원 </h3>
-                <h3> Travis Scott x McDonald's Billions Served Work Jacket </h3>
+                    <img src="/images/90s 올드 스투시 드래곤 티셔츠 반팔 XL0.jpg" id="big6">
+                </div>
+                <div class="small-pic">
+                    <img src="/images/90s 올드 스투시 드래곤 티셔츠 반팔 XL1.jpg" class="small6">
+                    <img src="/images/90s 올드 스투시 드래곤 티셔츠 반팔 XL2.jpg" class="small6">
+                    <img src="/images/90s 올드 스투시 드래곤 티셔츠 반팔 XL3.jpg" class="small6">
+                </div>
+                <h3> 현 시세가 : 180,000원 </h3>
+                <h3> 90s old stussy dragon T-shirts XL </h3>
                 <button class="addItem"> 장바구니에 추가하기 </button>
             </div>
         </div>
+        <br>
+        <hr>
+        <br>
+        <div class="product">
+            <div class="pdt7">
+                <div class="big-pic">
+                    <img src="/images/80s 올드 스투시 knowledge is king0.jpg" id="big7">
+                </div>
+                <div class="small-pic">
+                    <img src="/images/80s 올드 스투시 knowledge is king1.jpg" class="small7">
+                    <img src="/images/80s 올드 스투시 knowledge is king2.jpg" class="small7">
+                    <img src="/images/80s 올드 스투시 knowledge is king3.jpg" class="small7">
+                </div>
+                <h3> 현 시세가 : 350,000원 </h3>
+                <h3> 80s vintage Old Stussy Knowledge is King T-shirts L </h3>
+                <button class="addItem"> 장바구니에 추가하기 </button>
+            </div>
+            <div class="pdt8">
+                <div class="big-pic">
+                    <img src="/images/90s 스투시 stussy big and meaty0.jpg" id="big8">
+                </div>
+                <div class="small-pic">
+                    <img src="/images/90s 스투시 stussy big and meaty1.jpg" class="small8">
+                    <img src="/images/90s 스투시 stussy big and meaty2.jpg" class="small8">
+                    <img src="/images/90s 스투시 stussy big and meaty3.jpg" class="small8">
+                </div>
+                <h3> 현 시세가 : 500,000원</h3>
+                <h3> Supreme x Thrasher Hooded Sweatshirt - 21FW </h3>
+                <button class="addItem"> 장바구니에 추가하기 </button>
+            </div>
+            <div class="pdt9">
+                <div class="big-pic">
+                    <img src="/images/90s 올드 스투시 드래곤 티셔츠 반팔 XL0.jpg" id="big9">
+                </div>
+                <div class="small-pic">
+                    <img src="/images/90s 올드 스투시 드래곤 티셔츠 반팔 XL1.jpg" class="small9">
+                    <img src="/images/90s 올드 스투시 드래곤 티셔츠 반팔 XL2.jpg" class="small9">
+                    <img src="/images/90s 올드 스투시 드래곤 티셔츠 반팔 XL3.jpg" class="small9">
+                </div>
+                <h3> 현 시세가 : 180,000원 </h3>
+                <h3> 90s old stussy dragon T-shirts XL </h3>
+                <button class="addItem"> 장바구니에 추가하기 </button>
+            </div>
+        </div>
+
         <p> 좋아하는 것들 전부 장바구니에 담아보기 </p>
     </div>
     <!-- 장바구니 영역 -->
     <aside id="shopstyle">
-    <div id="shoppingList"> 좋아하는 것들 </div>
+        <div id="shoppingList"> 좋아하는 것들 </div>
 
 
 
 
-    <hr>
-    <div>합계 : <input type="hidden" id="total" name="total" class="price" readonly>원</div>
-</aside>
+        <hr>
+        <div>합계 : <input type="hidden" id="total" name="total" class="price" readonly>원</div>
+    </aside>
     <!-- id는 script에서 1회성으로 사용가능하고
     class는 여러번 사용 가능하다. -->
     <script>
@@ -177,7 +210,7 @@
                 let newP = document.createElement("p"); // 새로운 p요소 노드 만들기
                 let textNode = document.createTextNode(e.target.previousElementSibling.innerText);
                 // 클릭된 버튼의 이전 요소의 텍스트 가져오기
-                
+
                 newP.appendChild(textNode); // 텍스트 노드를 p요소 노드에 추가
                 shoppingList.appendChild(newP);
 
@@ -194,96 +227,139 @@
         let big4 = document.querySelector("#big4");
         let big5 = document.querySelector("#big5");
         let big6 = document.querySelector("#big6");
+        let big7 = document.querySelector("#big7");
+        let big8 = document.querySelector("#big8");
+        let big9 = document.querySelector("#big9");
         let smallPics1 = document.querySelectorAll(".small1");
         let smallPics2 = document.querySelectorAll(".small2");
         let smallPics3 = document.querySelectorAll(".small3");
         let smallPics4 = document.querySelectorAll(".small4");
         let smallPics5 = document.querySelectorAll(".small5");
         let smallPics6 = document.querySelectorAll(".small6");
+        let smallPics7 = document.querySelectorAll(".small7");
+        let smallPics8 = document.querySelectorAll(".small8");
+        let smallPics9 = document.querySelectorAll(".small9");
         let pdt1 = document.querySelector(".pdt1");
         let pdt2 = document.querySelector(".pdt2");
         let pdt3 = document.querySelector(".pdt3");
         let pdt4 = document.querySelector(".pdt4");
         let pdt5 = document.querySelector(".pdt5");
         let pdt6 = document.querySelector(".pdt6");
+        let pdt7 = document.querySelector(".pdt7");
+        let pdt8 = document.querySelector(".pdt8");
+        let pdt9 = document.querySelector(".pdt9");
 
         // 1번째 제품사진들
-        for(let i=0; i<smallPics1.length; i++){
+        for (let i = 0; i < smallPics1.length; i++) {
             smallPics1[i].addEventListener("click", changePic1)
         }
         // for(let i=0; i<smallPics1.length; i++){
-            pdt1.addEventListener("mouseleave",function() {
-                big1.src = "/images/Reebok x JJJJound Club C White Olive.webp";
-            } )
-        function changePic1(){
+        pdt1.addEventListener("mouseleave", function () {
+            big1.src = "/images/Reebok x JJJJound Club C White Olive.webp";
+        })
+        function changePic1() {
             let newPic1 = this.src;
             big1.setAttribute("src", newPic1);
         }
 
         // 2번째 제품사진들
-        for(let i=0; i<smallPics2.length; i++){
+        for (let i = 0; i < smallPics2.length; i++) {
             smallPics2[i].addEventListener("click", changePic2)
         }
         // for(let i=0; i<smallPics1.length; i++){
-            pdt2.addEventListener("mouseleave",function() {
-                big2.src = "/images/Supreme x Thrasher Hooded Sweatshirt Ash Grey - 21FW.webp";
-            } )
-        function changePic2(){
+        pdt2.addEventListener("mouseleave", function () {
+            big2.src = "/images/Supreme x Thrasher Hooded Sweatshirt Ash Grey - 21FW.webp";
+        })
+        function changePic2() {
             let newPic2 = this.src;
             big2.setAttribute("src", newPic2);
         }
         // 3번째 사진들
-        for(let i=0; i<smallPics3.length; i++){
+        for (let i = 0; i < smallPics3.length; i++) {
             smallPics3[i].addEventListener("click", changePic3)
         }
         // for(let i=0; i<smallPics1.length; i++){
-            pdt3.addEventListener("mouseleave",function() {
-                big3.src = "/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown.webp";
-            } )
-        function changePic3(){
+        pdt3.addEventListener("mouseleave", function () {
+            big3.src = "/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown0.jpg";
+        })
+        function changePic3() {
             let newPic3 = this.src;
             big3.setAttribute("src", newPic3);
         }
         // 4번째 사진들
-        for(let i=0; i<smallPics4.length; i++){
+        for (let i = 0; i < smallPics4.length; i++) {
             smallPics4[i].addEventListener("click", changePic4)
         }
         // for(let i=0; i<smallPics1.length; i++){
-            pdt4.addEventListener("mouseleave",function() {
-                big4.src = "/images/80s 올드 스투시 knowledge is king0.jpg";
-            } )
-        function changePic4(){
+        pdt4.addEventListener("mouseleave", function () {
+            big4.src = "/images/80s 올드 스투시 knowledge is king0.jpg";
+        })
+        function changePic4() {
             let newPic4 = this.src;
             big4.setAttribute("src", newPic4);
         }
         // 5번째 사진들
-        for(let i=0; i<smallPics5.length; i++){
+        for (let i = 0; i < smallPics5.length; i++) {
             smallPics5[i].addEventListener("click", changePic5)
         }
         // for(let i=0; i<smallPics1.length; i++){
-            pdt5.addEventListener("mouseleave",function() {
-                big5.src = "/images/90s 스투시 stussy big and meaty0.jpg";
-            } )
-        function changePic5(){
+        pdt5.addEventListener("mouseleave", function () {
+            big5.src = "/images/90s 스투시 stussy big and meaty0.jpg";
+        })
+        function changePic5() {
             let newPic5 = this.src;
             big5.setAttribute("src", newPic5);
         }
         // 6번째 사진들
-        for(let i=0; i<smallPics6.length; i++){
+        for (let i = 0; i < smallPics6.length; i++) {
             smallPics6[i].addEventListener("click", changePic6)
         }
         // for(let i=0; i<smallPics1.length; i++){
-            pdt6.addEventListener("mouseleave",function() {
-                big6.src = "/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown.webp";
-            } )
-        function changePic6(){
+        pdt6.addEventListener("mouseleave", function () {
+            big6.src = "/images/90s 올드 스투시 드래곤 티셔츠 반팔 XL0.jpg";
+        })
+        function changePic6() {
             let newPic6 = this.src;
-            big3.setAttribute("src", newPic6);
+            big6.setAttribute("src", newPic6);
         }
-
+        // 7번째 사진들
+        for (let i = 0; i < smallPics7.length; i++) {
+            smallPics7[i].addEventListener("click", changePic7)
+        }
+        // for(let i=0; i<smallPics1.length; i++){
+        pdt7.addEventListener("mouseleave", function () {
+            big7.src = "/images/90s 올드 스투시 드래곤 티셔츠 반팔 XL0.jpg";
+        })
+        function changePic7() {
+            let newPic7 = this.src;
+            big7.setAttribute("src", newPic7);
+        }
+        // 8번째 사진들
+                for (let i = 0; i < smallPics8.length; i++) {
+            smallPics8[i].addEventListener("click", changePic8)
+        }
+        // for(let i=0; i<smallPics1.length; i++){
+        pdt8.addEventListener("mouseleave", function () {
+            big8.src = "/images/90s 올드 스투시 드래곤 티셔츠 반팔 XL0.jpg";
+        })
+        function changePic8() {
+            let newPic8 = this.src;
+            big8.setAttribute("src", newPic8);
+        }
+                // 9번째 사진들
+                for (let i = 0; i < smallPics9.length; i++) {
+            smallPics9[i].addEventListener("click", changePic9)
+        }
+        // for(let i=0; i<smallPics1.length; i++){
+        pdt9.addEventListener("mouseleave", function () {
+            big9.src = "/images/90s 올드 스투시 드래곤 티셔츠 반팔 XL0.jpg";
+        })
+        function changePic9() {
+            let newPic9 = this.src;
+            big9.setAttribute("src", newPic9);
+        }
         // 토탈 합계영역
         let price = 0;
-        let 
     </script>
 </body>
 
