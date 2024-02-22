@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 좋아하는 것들 </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     <style>
         #shoppingList {
             width: 500px;
@@ -14,8 +17,11 @@
             color: black;
             font-weight: bolder;
         }
-        h1 h2{
-
+        h1 {
+            font-family: "Nanum Myeongjo", serif;
+        }
+        h2 {
+              font-family: "Nanum Myeongjo", serif;
         }
         .big-pic img {
             width: 300px;
@@ -42,8 +48,17 @@
             width: 100px;
             height: 80px;
         }
-        .pdt{
-            /* border: 3px solid black; */
+        .small4{
+            width: 100px;
+            height: 80px;
+        }
+        .small5{
+            width: 100px;
+            height: 80px;
+        }
+        .small6{
+            width: 100px;
+            height: 80px;
         }
     </style>
 </head>
@@ -94,8 +109,49 @@
                 <button class="addItem"> 장바구니에 추가하기 </button>
             </div>
         </div>
+        <br>
+        <hr>
+        <br>
         <div class="product">
-
+            <div class="pdt4">
+                <div class="big-pic">
+                <img src="/images/80s 올드 스투시 knowledge is king0.jpg" id="big4">
+            </div>
+                <div class="small-pic">
+                    <img src="/images/80s 올드 스투시 knowledge is king1.jpg" class="small4">
+                    <img src="/images/80s 올드 스투시 knowledge is king2.jpg" class="small4">
+                    <img src="/images/80s 올드 스투시 knowledge is king3.jpg" class="small4">
+                </div>
+                <h3> 현 시세가 : 350,000원 </h3>
+                <h3> 80s vintage Old Stussy Knowledge is King T-shirts </h3>
+                <button class="addItem"> 장바구니에 추가하기 </button>
+            </div>
+            <div class="pdt5">
+                <div class="big-pic">
+                <img src="/images/90s 스투시 stussy big and meaty0.jpg" id="big5">
+            </div>
+            <div class="small-pic">
+                <img src="/images/90s 스투시 stussy big and meaty1.jpg" class="small5">
+                <img src="/images/90s 스투시 stussy big and meaty2.jpg" class="small5">
+                <img src="/images/90s 스투시 stussy big and meaty3.jpg" class="small5">
+            </div>
+                <h3> 현 시세가 : 500,000원</h3>
+                <h3> Supreme x Thrasher Hooded Sweatshirt - 21FW </h3>
+                <button class="addItem"> 장바구니에 추가하기 </button>
+            </div>
+            <div class="pdt6">
+                <div class="big-pic">
+                <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown.webp" id="big6">
+            </div>
+            <div class="small-pic">
+                <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown1.avif" class="small6">
+                <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown2.avif" class="small6">
+                <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown3.webp" class="small6">
+            </div>
+                <h3> 현 시세가 : 341,000원 </h3>
+                <h3> Travis Scott x McDonald's Billions Served Work Jacket </h3>
+                <button class="addItem"> 장바구니에 추가하기 </button>
+            </div>
         </div>
         <p> 좋아하는 것들 전부 장바구니에 담아보기 </p>
     </div>
@@ -129,12 +185,21 @@
         let big1 = document.querySelector("#big1");
         let big2 = document.querySelector("#big2");
         let big3 = document.querySelector("#big3");
+        let big4 = document.querySelector("#big4");
+        let big5 = document.querySelector("#big5");
+        let big6 = document.querySelector("#big6");
         let smallPics1 = document.querySelectorAll(".small1");
         let smallPics2 = document.querySelectorAll(".small2");
         let smallPics3 = document.querySelectorAll(".small3");
+        let smallPics4 = document.querySelectorAll(".small4");
+        let smallPics5 = document.querySelectorAll(".small5");
+        let smallPics6 = document.querySelectorAll(".small6");
         let pdt1 = document.querySelector(".pdt1");
         let pdt2 = document.querySelector(".pdt2");
         let pdt3 = document.querySelector(".pdt3");
+        let pdt4 = document.querySelector(".pdt4");
+        let pdt5 = document.querySelector(".pdt5");
+        let pdt6 = document.querySelector(".pdt6");
 
         // 1번째 제품사진들
         for(let i=0; i<smallPics1.length; i++){
@@ -173,8 +238,42 @@
             let newPic3 = this.src;
             big3.setAttribute("src", newPic3);
         }
-
-        
+        // 4번째 사진들
+        for(let i=0; i<smallPics4.length; i++){
+            smallPics4[i].addEventListener("click", changePic4)
+        }
+        // for(let i=0; i<smallPics1.length; i++){
+            pdt4.addEventListener("mouseleave",function() {
+                big4.src = "/images/80s 올드 스투시 knowledge is king0.jpg";
+            } )
+        function changePic4(){
+            let newPic4 = this.src;
+            big4.setAttribute("src", newPic4);
+        }
+        // 5번째 사진들
+        for(let i=0; i<smallPics5.length; i++){
+            smallPics5[i].addEventListener("click", changePic5)
+        }
+        // for(let i=0; i<smallPics1.length; i++){
+            pdt5.addEventListener("mouseleave",function() {
+                big5.src = "/images/90s 스투시 stussy big and meaty0.jpg";
+            } )
+        function changePic5(){
+            let newPic5 = this.src;
+            big5.setAttribute("src", newPic5);
+        }
+        // 6번째 사진들
+        for(let i=0; i<smallPics6.length; i++){
+            smallPics6[i].addEventListener("click", changePic6)
+        }
+        // for(let i=0; i<smallPics1.length; i++){
+            pdt6.addEventListener("mouseleave",function() {
+                big6.src = "/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown.webp";
+            } )
+        function changePic6(){
+            let newPic6 = this.src;
+            big3.setAttribute("src", newPic6);
+        }
     </script>
 </body>
 
