@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> student02 </title>
+</head>
+<body>
+    <section>
+        <h3> Clothes 명단 </h3>
+        <div id="result"></div>
+    </section>
+
+    <script>
+        // fetch 이용 JSON자료 가져오기
+        // fetch는 if문 따로 없다. 받아오면 then()함수 연결
+        fetch('3. student02(fetch).json') // JSON파일 읽기
+        .then(response => response.json()) // 응답 -> JSON파일을 객체로 변환
+        .then(json => { // 객체를 출력
+            let output = ''; // 응답 받음
+            json.forEach(student => {
+                output += `
+                <h2> ${student.name} </h2>
+                <ul>
+                    <li> 전공 : ${student.major} </li>
+                    <li> 전공 : ${student.grade} </li>
+                    </ul>
+                    `;
+            })
+            document.querySelector('#result').innerHTML = output;
+        })
+    </script>
+</body>
+</html>

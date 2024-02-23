@@ -1,0 +1,17 @@
+[
+{
+    "name" : "carhartt",
+    "major": "double knee pants",
+    "grade" : 2
+},
+{
+    "name" : "stussy",
+    "major" : "90s vintage T-shirts",
+    "grade" : 3
+},
+{
+    "name" : "Supreme",
+    "major" : "Skateboard", 
+    "grade" : 4 
+}
+]
