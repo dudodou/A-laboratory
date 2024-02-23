@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> user_json </title>
+</head>
+<body>
+    <div id="result">
+        <div class="quote"></div>
+        <div class="author"></div>
+    </div>
+
+    <script>
+        fetch("https://dummyjson.com/quotes")
+        .then(response => response.json())
+        .then(data => {
+            // 한 번에 가져오는 데이터 확인하기
+            console.log(data);
+        })
+    </script>
+</body>
+</html>
