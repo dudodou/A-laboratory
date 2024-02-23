@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좋아하는 것들</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        #shopstyle {
+            width: 500px;
+            border: 3px solid black;
+            border-style: dashed;
+            background-color: rgba(128, 128, 0, 0.333);
+            color: black;
+            font-weight: bolder;
+        }
+
+        h1 {
+            font-family: "Nanum Myeongjo", serif;
+        }
+
+        h2 {
+            font-family: "Nanum Myeongjo", serif;
+        }
+        .pdt1, .pdt2, .pdt3, .pdt4, .pdt5, .pdt6, .pdt7, .pdt8, .pdt9 {
+            width: 300px;
+        }
+        .big-pic img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .small1, .small2, .small3, .small4, .small5, .small6, .small7, .small8, .small9 {
+            width: 90px;
+            height: 80px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            cursor: pointer;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 상품 내용이 나올 공간 -->
+    <div id="container">
+        <h1>Favorites</h1>
+        <h2>좋아하는 제품을 선택하세요.</h2>
+        <div class="product">
+            <!-- 제품 1 -->
+            <div class="pdt1">
+                <div class="big-pic">
+                    <img src="/images/Reebok x JJJJound Club C White Olive.webp" id="big1">
+                </div>
+                <div class="small-pic">
+                    <img src="/images/jjjjound-reebok-club-olive-image3.avif" class="small1">
+                    <img src="/images/jjjjound-reebok-club-olive-image2.webp" class="small1">
+                    <img src="/images/jjjjound-reebok-club-olive-image1.avif" class="small1">
+                </div>
+                <h4>현 시세가: 210,000원</h4>
+                <h3 class="account" value="210000"><a href="https://kream.co.kr/products/114882?fetchRelated=true" target="_blank">Reebok x JJJJound Club C White Olive</a></h3>
+                <button class="addItem">장바구니에 추가하기</button>
+                <!-- 수량 추가 -->
+                <button class="addQuantity">+</button>
+                <button class="subtractQuantity">-</button>
+            </div>
+            <!-- 제품 2 -->
+            <div class="pdt2">
+                <div class="big-pic">
+                    <img src="/images/Supreme x Thrasher Hooded Sweatshirt Ash Grey - 21FW.webp" id="big2">
+                </div>
+                <div class="small-pic">
+                    <img src="/images/supreme_thrasher_hoodie_21fw_image1.jpeg" class="small2">
+                    <img src="/images/supreme_thrasher_hoodie_21fw_image2.webp" class="small2">
+                    <img src="/images/supreme_thrasher_hoodie_21fw_image3.webp" class="small2">
+                </div>
+                <h4>현 시세가: 500,000원</h4>
+                <h3 class="account" value="500000"><a href="https://kream.co.kr/products/42036?size=L" target="_blank">Supreme x Thrasher Hooded Sweatshirt - 21FW</a></h3>
+                <button class="addItem">장바구니에 추가하기</button>
+                <!-- 수량 추가 -->
+                <button class="addQuantity">+</button>
+                <button class="subtractQuantity">-</button>
+            </div>
+            <!-- 제품 3 -->
+            <div class="pdt3">
+                <div class="big-pic">
+                    <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown0.jpg" id="big3">
+                </div>
+                <div class="small-pic">
+                    <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown1.avif" class="small3">
+                    <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown2.avif" class="small3">
+                    <img src="/images/Travis-Scott-x-McDonalds-Work-Jacket-Brown3.webp" class="small3">
+                </div>
+                <h4>현 시세가: 489,000원</h4>
+                <h3 class="account" value="489000"><a href="https://m.bunjang.co.kr/products/235161183?" target="_blank">Travis Scott x McDonald's Billions Served Work Jacket</a></h3>
+                <button class="addItem">장바구니에 추가하기</button>
+                <!-- 수량 추가 -->
+                <button class="addQuantity">+</button>
+                <button class="subtractQuantity">-</button>
+            </div>
+            <!-- 추가된 부분 주석 처리 -->
+            <!--
+            <div class="pdt4">
+                <div class="big-pic">
+                    <img src="/images/80s 올드 스투시 knowledge is king0.jpg" id="big4">
+                </div>
+                <div class="small-pic">
+                    <img src="/images/80s 올드 스투시 knowledge is king1.jpg" class="small4">
+                    <img src="/images/80s 올드 스투시 knowledge is king2.jpg" class="small4">
+                    <img src="/images/80s 올드 스투시 knowledge is king3.jpg" class="small4">
+                </div>
+                <h4>현 시세가: 200,000원</h4>
+                <h3 class="account" value="200000"><a href="https://www.grailed.com/listings/33469993-the-weeknd-x-reebok-the-weeknd-x-reebok-25--leather-sneakers-knowledge-is-king" target="_blank">The Weeknd x Reebok 25% Leather Sneakers "knowledge is king"</a></h3>
+                <button class="addItem">장바구니에 추가하기</button>
+                <button class="addQuantity">수량 추가</button>
+            </div>
+            -->
+        </div>
+        <!-- 합계를 표시할 공간 -->
+        <div id="total">합계: 0원</div>
+    </div>
+    <script>
+        let totalPrice = 0;
+
+        function showTotal() {
+            const total = document.getElementById('total');
+            total.textContent = "합계: " + totalPrice + "원";
+        }
+
+        function addQuantity(event) {
+            const target = event.target;
+            const product = target.closest('.product');
+            const price = parseInt(product.querySelector('.account').getAttribute('value'));
+            totalPrice += price;
+            showTotal();
+        }
+
+        function subtractQuantity(event) {
+            const target = event.target;
+            const product = target.closest('.product');
+            const price = parseInt(product.querySelector('.account').getAttribute('value'));
+            totalPrice -= price;
+            showTotal();
+        }
+
+        const addQuantityButtons = document.querySelectorAll('.addQuantity');
+        addQuantityButtons.forEach(button => {
+            button.addEventListener('click', addQuantity);
+        });
+
+        const subtractQuantityButtons = document.querySelectorAll('.subtractQuantity');
+        subtractQuantityButtons.forEach(button => {
+            button.addEventListener('click', subtractQuantity);
+        });
+
+    </script>
+</body>
+
+</html>

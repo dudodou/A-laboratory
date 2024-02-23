@@ -7,17 +7,30 @@
 </head>
 <body>
     <div id="result">
-        <div class="quote"></div>
-        <div class="author"></div>
+        <!-- <div class="quote"></div>
+        <div class="author"></div> -->
     </div>
 
     <script>
         fetch("https://dummyjson.com/quotes")
         .then(response => response.json())
-        .then(data => {
-            // 한 번에 가져오는 데이터 확인하기
-            console.log(data);
-        })
+        .then(json => {
+            console.log(json); // 한 번에 가져오는 데이터 확인하기
+            console.log(json.quotes);
+            const result = document.querySelector("#result");
+            let output = '';
+
+        // 🔴json.quotes.forEach 제이슨안에 quotes안에 quote가 있다.
+        json.quotes.forEach(quote => {
+            output += `
+            <div class="quote">${quote.quote}</div>
+            <div class="author">- ${quote.author}</div>
+            <hr>
+            `;
+        });
+        result.innerHTML = output;
+    })
+    .catch(error => console.log(error)); // 다른곳에서 가져올때 에러날 경우 에러라고 표시
     </script>
 </body>
 </html>

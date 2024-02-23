@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> user_json_random </title>
+</head>
+<body>
+    <div id="result"></div>
+    <!-- 🔴랜덤으로 불러오기 -->
+    <div id="quote"></div>
+    <div id="author"></div>
+
+    <script>
+        fetch("http://dummyjson.com/quotes")
+        .then(response => response.json())
+        .then(json => {
+            console.log(json);
+            // 데이터 구조 파악. 한 번에 가져오는 데이터 🔴갯수 확인
+            const result = document.querySelector("#result");
+            // 🔴랜덤으로 불러오기
+            const random = Math.floor(Math.random() * 30); // 0 ~ 29 사이의 수
+            result.querySelector(".quote").innerHTML = json.quotes[random].quote;
+            result.querySelector(".author").innerHTML = `${json.quotes[random].author}`;
+        })
+        .catch(error => console.log(error));
+    </script>
+</body>
+</html>
